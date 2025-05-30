@@ -7,63 +7,54 @@ import { useState, useEffect } from "react";
 export const Comparison = () => {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
 
-  const featureCategories = [
+  const comparisonFeatures = [
     {
-      title: "Speed & Verification",
-      features: [
-        {
-          icon: Zap,
-          name: "Account Verification",
-          xdeel: "Verified in minutes",
-          traditional: "Days of manual checks",
-          badge: "Instant"
-        },
-        {
-          icon: CreditCard,
-          name: "Fiat to Crypto",
-          xdeel: "Direct conversion",
-          traditional: "Multiple steps required",
-          badge: "Direct"
-        }
-      ]
+      icon: Zap,
+      name: "Account Verification",
+      description: "Get verified and start trading quickly",
+      xdeel: "Verified in minutes",
+      traditional: "Days of manual checks",
+      badge: "Instant"
     },
     {
-      title: "Regulatory & Banking",
-      features: [
-        {
-          icon: Shield,
-          name: "EU Authorization",
-          xdeel: "KNF licensed & regulated",
-          traditional: "Often unregulated",
-          badge: "EU Licensed"
-        },
-        {
-          icon: Euro,
-          name: "European Banking",
-          xdeel: "Full SEPA & SWIFT support",
-          traditional: "Limited banking options",
-          badge: "SEPA Ready"
-        }
-      ]
+      icon: Euro,
+      name: "SEPA/SWIFT Transfers",
+      description: "European banking integration",
+      xdeel: "Full SEPA & SWIFT support",
+      traditional: "Limited banking options",
+      badge: "EU Banking"
     },
     {
-      title: "Security & Support",
-      features: [
-        {
-          icon: Clock,
-          name: "Asset Protection",
-          xdeel: "Military-grade encryption",
-          traditional: "Security varies widely",
-          badge: "Encrypted"
-        },
-        {
-          icon: HeadphonesIcon,
-          name: "Customer Support",
-          xdeel: "24/7 expert assistance",
-          traditional: "Business hours only",
-          badge: "24/7"
-        }
-      ]
+      icon: Shield,
+      name: "Licensed in EU",
+      description: "Regulated and compliant operations",
+      xdeel: "KNF licensed & regulated",
+      traditional: "Often unregulated",
+      badge: "EU Licensed"
+    },
+    {
+      icon: CreditCard,
+      name: "Direct Fiat to Crypto",
+      description: "Seamless currency conversion",
+      xdeel: "Direct conversion",
+      traditional: "Multiple steps required",
+      badge: "Direct"
+    },
+    {
+      icon: HeadphonesIcon,
+      name: "24/7 Support",
+      description: "Round-the-clock assistance",
+      xdeel: "24/7 expert assistance",
+      traditional: "Business hours only",
+      badge: "24/7"
+    },
+    {
+      icon: Shield,
+      name: "Bank-Grade Security",
+      description: "Military-grade protection",
+      xdeel: "Military-grade encryption",
+      traditional: "Security varies widely",
+      badge: "Encrypted"
     }
   ];
 
@@ -77,7 +68,7 @@ export const Comparison = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.3 }
     );
 
     const elements = document.querySelectorAll('[data-index]');
@@ -102,98 +93,93 @@ export const Comparison = () => {
           </p>
         </div>
 
-        {/* Comparison Header */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div></div>
-          <div className="text-center">
-            <div className="bg-[#7B38F3] text-white rounded-2xl p-6 shadow-lg">
-              <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">X</span>
+        {/* Comparison Table */}
+        <Card className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-xl rounded-2xl overflow-hidden">
+          <CardContent className="p-0">
+            {/* Table Header */}
+            <div className="grid grid-cols-12 gap-6 items-center p-6 bg-gradient-to-r from-[#7B38F3]/5 to-[#A855F7]/5 border-b border-gray-100">
+              <div className="col-span-5">
+                <h3 className="text-lg font-bold text-[#2E2E2E]">Feature</h3>
               </div>
-              <h3 className="text-xl font-bold">Xdeel</h3>
-              <p className="text-[#E8DCFF] text-sm mt-2">Modern, regulated, fast</p>
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="bg-gray-500 text-white rounded-2xl p-6 shadow-lg">
-              <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">T</span>
-              </div>
-              <h3 className="text-xl font-bold">Traditional</h3>
-              <p className="text-gray-300 text-sm mt-2">Legacy exchanges</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Feature Categories */}
-        <div className="space-y-12">
-          {featureCategories.map((category, categoryIndex) => {
-            const isVisible = visibleItems.includes(categoryIndex);
-            
-            return (
-              <div 
-                key={categoryIndex}
-                data-index={categoryIndex}
-                className={`transition-all duration-700 ${
-                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                }`}
-                style={{ transitionDelay: `${categoryIndex * 200}ms` }}
-              >
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-[#2E2E2E] mb-2">{category.title}</h3>
-                  <div className="w-20 h-1 bg-gradient-to-r from-[#7B38F3] to-[#A855F7] mx-auto rounded-full"></div>
+              <div className="col-span-3 text-center">
+                <div className="inline-flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-[#7B38F3] rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">X</span>
+                  </div>
+                  <span className="text-[#7B38F3] font-bold text-lg">Xdeel</span>
                 </div>
-
-                <Card className="bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-xl rounded-3xl overflow-hidden">
-                  <CardContent className="p-0">
-                    {category.features.map((feature, featureIndex) => {
-                      const IconComponent = feature.icon;
-                      
-                      return (
-                        <div key={featureIndex} className={`grid md:grid-cols-3 gap-6 items-center p-8 ${featureIndex !== category.features.length - 1 ? 'border-b border-gray-100' : ''}`}>
-                          {/* Feature Info */}
-                          <div className="space-y-3">
-                            <div className="flex items-center space-x-3">
-                              <div className="p-3 bg-[#7B38F3]/10 rounded-xl">
-                                <IconComponent className="w-6 h-6 text-[#7B38F3]" />
-                              </div>
-                              <div>
-                                <h4 className="text-lg font-bold text-[#2E2E2E]">{feature.name}</h4>
-                                <Badge variant="outline" className="text-xs text-[#7B38F3] border-[#7B38F3]/30 mt-1">
-                                  {feature.badge}
-                                </Badge>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Xdeel Column */}
-                          <div className="text-center">
-                            <div className="flex items-center justify-center space-x-2 mb-3">
-                              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check className="w-5 h-5 text-white" />
-                              </div>
-                            </div>
-                            <p className="text-[#2E2E2E] font-semibold">{feature.xdeel}</p>
-                          </div>
-
-                          {/* Traditional Column */}
-                          <div className="text-center">
-                            <div className="flex items-center justify-center space-x-2 mb-3">
-                              <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                                <X className="w-5 h-5 text-white" />
-                              </div>
-                            </div>
-                            <p className="text-[#7C7C7C] font-medium">{feature.traditional}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </CardContent>
-                </Card>
               </div>
-            );
-          })}
-        </div>
+              <div className="col-span-4 text-center">
+                <div className="inline-flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">T</span>
+                  </div>
+                  <span className="text-gray-600 font-bold text-lg">Traditional</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Feature Rows */}
+            {comparisonFeatures.map((feature, index) => {
+              const IconComponent = feature.icon;
+              const isVisible = visibleItems.includes(index);
+              const isEven = index % 2 === 0;
+              
+              return (
+                <div 
+                  key={index}
+                  data-index={index}
+                  className={`grid grid-cols-12 gap-6 items-center p-6 transition-all duration-700 hover:bg-gray-50/50 ${
+                    isEven ? 'bg-[#F9F6FF]/30' : 'bg-white'
+                  } ${
+                    isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                  } ${index !== comparisonFeatures.length - 1 ? 'border-b border-gray-100' : ''}`}
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                >
+                  {/* Feature Info */}
+                  <div className="col-span-5 space-y-2">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-[#7B38F3]/10 rounded-lg">
+                        <IconComponent className="w-5 h-5 text-[#7B38F3]" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-[#2E2E2E]">{feature.name}</h4>
+                        <p className="text-sm text-[#7C7C7C]">{feature.description}</p>
+                      </div>
+                    </div>
+                    <Badge variant="outline" className="text-xs text-[#7B38F3] border-[#7B38F3]/30 ml-11">
+                      {feature.badge}
+                    </Badge>
+                  </div>
+
+                  {/* Xdeel Column */}
+                  <div className="col-span-3 text-center">
+                    <div className="flex items-center justify-center space-x-3">
+                      <div className="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center">
+                        <Check className="w-4 h-4 text-green-700" />
+                      </div>
+                      <div className="text-left">
+                        <p className="text-[#2E2E2E] font-semibold text-sm">{feature.xdeel}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Traditional Column */}
+                  <div className="col-span-4 text-center">
+                    <div className="flex items-center justify-center space-x-3">
+                      <div className="w-7 h-7 bg-red-100 rounded-full flex items-center justify-center">
+                        <X className="w-4 h-4 text-red-700" />
+                      </div>
+                      <div className="text-left">
+                        <p className="text-[#7C7C7C] font-medium text-sm">{feature.traditional}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </CardContent>
+        </Card>
 
         {/* Summary CTA */}
         <div className="mt-20 text-center">
