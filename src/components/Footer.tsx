@@ -2,37 +2,38 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const footerLinks = {
     "Company": [
-      { name: "About Us", href: "#about" },
-      { name: "Careers", href: "#careers" },
-      { name: "Press", href: "#press" },
-      { name: "Contact", href: "#contact" }
-    ],
-    "Product": [
-      { name: "Features", href: "#features" },
-      { name: "How It Works", href: "#how-it-works" },
-      { name: "Security", href: "#security" },
-      { name: "API", href: "#api" }
+      { name: "About Us", href: "/about" },
+      { name: "How It Works", href: "/how-it-works" },
+      { name: "Features", href: "/features" },
+      { name: "Contact", href: "/contact" }
     ],
     "Support": [
-      { name: "Help Center", href: "#help" },
-      { name: "FAQ", href: "#faq" },
-      { name: "Community", href: "#community" },
-      { name: "24/7 Support", href: "#contact" }
+      { name: "FAQ", href: "/faq" },
+      { name: "Contact Support", href: "/contact" },
+      { name: "24/7 Support", href: "/contact" },
+      { name: "Help Center", href: "/contact" }
     ],
     "Legal": [
-      { name: "Terms of Service", href: "#terms" },
-      { name: "Privacy and Cookie Policy", href: "#privacy" },
-      { name: "Legal and Compliance", href: "#compliance" },
-      { name: "Compliance and KYC Overview", href: "#kyc" }
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Privacy and Cookie Policy", href: "/privacy" },
+      { name: "Legal and Compliance", href: "/legal" },
+      { name: "Compliance and KYC Overview", href: "/kyc-overview" }
+    ],
+    "Account": [
+      { name: "Sign In", href: "/login" },
+      { name: "Sign Up", href: "/signup" },
+      { name: "Compliance", href: "/compliance" },
+      { name: "Security", href: "/compliance" }
     ]
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <footer className="bg-xdeel-dark text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
@@ -45,18 +46,20 @@ export const Footer = () => {
             </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-center text-gray-400">
-                <Phone className="w-4 h-4 mr-2 text-blue-400" />
+                <Phone className="w-4 h-4 mr-2 text-xdeel-primary" />
                 <span>+48 66 224 8895</span>
               </div>
               <div className="flex items-center text-gray-400">
-                <Mail className="w-4 h-4 mr-2 text-blue-400" />
+                <Mail className="w-4 h-4 mr-2 text-xdeel-primary" />
                 <span>support@xdeel.com</span>
               </div>
             </div>
             <div className="flex space-x-4">
-              <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white">
-                Download App
-              </Button>
+              <Link to="/signup">
+                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -67,12 +70,12 @@ export const Footer = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href}
-                      className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                    <Link 
+                      to={link.href}
+                      className="text-gray-400 hover:text-xdeel-primary transition-colors duration-200"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
