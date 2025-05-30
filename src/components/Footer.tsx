@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   const footerLinks = {
     "Company": [
-      { name: "About Us", href: "/about" },
       { name: "How It Works", href: "/how-it-works" },
       { name: "Features", href: "/features" },
       { name: "Contact", href: "/contact" }

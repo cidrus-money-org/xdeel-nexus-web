@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -60,14 +61,6 @@ export const Navigation = () => {
                 }`}
               >
                 FAQ
-              </Link>
-              <Link 
-                to="/about" 
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive('/about') ? 'text-[#7B38F3] bg-[#F4F0FF]' : 'text-[#7C7C7C] hover:text-[#2E2E2E]'
-                }`}
-              >
-                About
               </Link>
               <Link 
                 to="/contact" 
@@ -138,13 +131,6 @@ export const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 FAQ
-              </Link>
-              <Link 
-                to="/about" 
-                className="text-xdeel-gray hover:text-xdeel-dark block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                About
               </Link>
               <Link 
                 to="/contact" 
