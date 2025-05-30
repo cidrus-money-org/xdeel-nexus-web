@@ -38,10 +38,10 @@ export const Comparison = () => {
   ];
 
   return (
-    <section className="py-20 bg-white w-full">
+    <section className="py-16 bg-[#F4F0FF] w-full border-t border-gray-200">
       <div className="w-full px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-[#F4F0FF] px-4 py-2 rounded-xl">
+        <div className="text-center mb-12">
+          <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-white px-4 py-2 rounded-xl">
             Comparison
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-4">
@@ -53,11 +53,11 @@ export const Comparison = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white border-gray-200 shadow-xl rounded-2xl overflow-hidden">
+          <Card className="bg-white border-gray-200 shadow-lg rounded-2xl overflow-hidden">
             <CardContent className="p-0">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#F4F0FF]">
+                  <thead className="bg-[#F8F6FF]">
                     <tr>
                       <th className="text-left p-6 text-[#2E2E2E] font-bold text-lg">Feature</th>
                       <th className="text-center p-6 text-[#7B38F3] font-bold text-lg">Xdeel</th>
