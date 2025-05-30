@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { UserPlus, CreditCard, Wallet, ArrowRight, Check, Clock } from "lucide-react";
@@ -66,7 +65,7 @@ export const StepsSection = () => {
 
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-xdeel-primary border-xdeel-primary/30 bg-white/80">

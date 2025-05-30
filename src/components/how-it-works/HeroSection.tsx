@@ -6,8 +6,8 @@ import { Shield, Clock, LockKeyhole, ArrowRight } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-xdeel-purple to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto px-6 md:px-8">
+        <div className="text-center">
           <Badge variant="outline" className="mb-4 text-xdeel-primary border-xdeel-primary/30 bg-white/80">
             Getting Started
           </Badge>

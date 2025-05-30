@@ -2,7 +2,7 @@
 export const Stats = () => {
   return (
     <section className="py-16 bg-white w-full">
-      <div className="w-full px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center group">
             <div className="bg-[#F4F0FF] rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:scale-105">

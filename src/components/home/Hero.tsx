@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F4F0FF] to-[#FFFFFF] pt-20 pb-20 w-full">
-      <div className="w-full px-6 lg:px-8 relative">
+      <div className="max-w-5xl mx-auto px-6 md:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
-          {/* Left Content */}
-          <div className="text-left">
+          {/* Left Content - Centered within container */}
+          <div className="text-left max-w-2xl">
             {/* Trust Badge */}
             <Badge variant="secondary" className="mb-8 bg-white/90 text-[#7B38F3] border-[#7B38F3]/20 shadow-md px-4 py-2 rounded-xl">
               <Shield className="w-4 h-4 mr-2" />
@@ -24,7 +24,7 @@ export const Hero = () => {
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg lg:text-xl text-[#7C7C7C] mb-10 max-w-2xl leading-relaxed">
+            <p className="text-lg lg:text-xl text-[#7C7C7C] mb-10 leading-relaxed font-semibold">
               Xdeel makes cryptocurrency accessible to everyone. Hassle-free setup, 
               flexible payment methods, and instant cryptocurrency purchases - all in one secure platform.
             </p>
@@ -61,8 +61,8 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Right Image - Allow overflow for visual depth */}
+          <div className="flex justify-center lg:justify-end relative -mr-6 lg:-mr-12">
             <div className="relative">
               <img 
                 src="/lovable-uploads/24821aa9-f534-46a1-a643-c3e584ade79e.png" 

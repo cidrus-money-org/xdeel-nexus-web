@@ -11,7 +11,7 @@ export const CTASection = () => {
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:32px_32px]"></div>
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-4xl mx-auto px-6 md:px-8 relative">
         <Card className="bg-white shadow-lg ring-1 ring-gray-200 border-0">
           <CardContent className="p-12 text-center">
             <Badge variant="secondary" className="mb-6 bg-xdeel-primary/10 text-xdeel-primary border-xdeel-primary/20">
