@@ -5,6 +5,8 @@ import { Shield, Lock, FileCheck, Eye, Phone, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 export const KYCSection = () => {
+  console.log("KYCSection component is rendering"); // Debug log
+  
   const securityFeatures = [
     {
       icon: Shield,
