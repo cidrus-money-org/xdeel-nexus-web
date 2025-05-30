@@ -28,13 +28,13 @@ export const Security = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 w-full">
+    <section className="py-16 bg-gray-50 w-full">
       <div className="w-full px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-white px-4 py-2 rounded-xl">
             Security & Regulation
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-4">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-6">
             Security, Regulation, and Peace of Mind
           </h2>
           <p className="text-lg text-[#7C7C7C] max-w-3xl mx-auto">

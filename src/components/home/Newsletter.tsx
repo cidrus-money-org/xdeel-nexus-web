@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 
 export const Newsletter = () => {
   return (
-    <section className="py-16 bg-gray-50 w-full">
+    <section className="py-12 bg-gray-50 w-full">
       <div className="w-full px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <div className="w-16 h-16 bg-[#7B38F3] rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -14,7 +14,7 @@ export const Newsletter = () => {
           <h3 className="text-2xl font-bold text-[#2E2E2E] mb-4">
             Stay Updated with Crypto News
           </h3>
-          <p className="text-[#7C7C7C] mb-8">
+          <p className="text-[#7C7C7C] mb-6">
             Get crypto updates, tips & new features delivered to your inbox.
           </p>
           

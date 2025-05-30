@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 
 export const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#8B5CF6] to-[#7B38F3] w-full">
+    <section className="py-16 bg-gradient-to-r from-[#8B5CF6] to-[#7B38F3] w-full">
       <div className="w-full px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <Card className="bg-white/10 backdrop-blur-lg border-white/20 shadow-2xl rounded-2xl">
-            <CardContent className="p-12 text-center">
+            <CardContent className="p-10 text-center">
               <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-6">
                 Ready to Start Your Crypto Journey?
               </h2>
               
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl text-white/90 mb-6 max-w-2xl mx-auto leading-relaxed">
                 Join thousands of users who trust Xdeel for secure, compliant, 
                 and simple cryptocurrency trading. Get started in minutes.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
                 <Link to="/signup">
                   <Button size="lg" className="bg-white text-[#7B38F3] hover:bg-gray-100 px-8 py-4 text-lg rounded-xl shadow-lg hover:scale-105 transition-all duration-200 ease-in-out font-semibold">
                     Create Account

@@ -32,13 +32,13 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-white w-full">
+    <section className="py-16 bg-white w-full">
       <div className="w-full px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-[#F4F0FF] px-4 py-2 rounded-xl">
             Features
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-4">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-6">
             Everything You Need for Crypto Trading
           </h2>
         </div>
