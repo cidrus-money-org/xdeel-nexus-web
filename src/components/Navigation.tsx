@@ -18,8 +18,12 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-xdeel-primary">
-              Xdeel
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/fa03512c-6722-42a7-bdbb-c74fe62f602c.png" 
+                alt="Xdeel" 
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
 
