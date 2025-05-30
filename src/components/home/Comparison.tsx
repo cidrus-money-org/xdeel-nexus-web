@@ -78,17 +78,17 @@ export const Comparison = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#F4F0FF] via-[#F8F6FF] to-white w-full border-t border-gray-200">
+    <section className="py-16 bg-gradient-to-br from-[#F4F0FF] via-[#F8F6FF] to-white w-full border-t border-gray-200">
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-6 text-[#7B38F3] border-[#7B38F3]/30 bg-white px-6 py-3 rounded-xl text-sm font-medium">
+        <div className="text-center mb-12">
+          <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-white px-4 py-2 rounded-xl text-sm font-medium">
             Comparison
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#2E2E2E] mb-6">
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#2E2E2E] mb-4">
             Why Businesses & Traders Choose Xdeel
           </h2>
-          <p className="text-xl text-[#7C7C7C] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#7C7C7C] max-w-3xl mx-auto leading-relaxed">
             Compare Xdeel to traditional exchanges and see the difference. Built for professionals who demand reliability, speed, and regulatory compliance.
           </p>
         </div>
@@ -97,13 +97,13 @@ export const Comparison = () => {
         <Card className="bg-white/80 backdrop-blur-sm border border-gray-200 shadow-xl rounded-2xl overflow-hidden">
           <CardContent className="p-0">
             {/* Table Header */}
-            <div className="grid grid-cols-12 gap-6 items-center p-6 bg-gradient-to-r from-[#7B38F3]/5 to-[#A855F7]/5 border-b border-gray-100">
+            <div className="grid grid-cols-12 gap-4 items-center p-4 bg-gradient-to-r from-[#7B38F3]/5 to-[#A855F7]/5 border-b border-gray-100">
               <div className="col-span-5">
                 <h3 className="text-lg font-bold text-[#2E2E2E]">Feature</h3>
               </div>
               <div className="col-span-3 text-center">
                 <div className="inline-flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-[#7B38F3] rounded-full flex items-center justify-center">
+                  <div className="w-7 h-7 bg-[#7B38F3] rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">X</span>
                   </div>
                   <span className="text-[#7B38F3] font-bold text-lg">Xdeel</span>
@@ -111,7 +111,7 @@ export const Comparison = () => {
               </div>
               <div className="col-span-4 text-center">
                 <div className="inline-flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center">
+                  <div className="w-7 h-7 bg-gray-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">T</span>
                   </div>
                   <span className="text-gray-600 font-bold text-lg">Traditional</span>
@@ -129,7 +129,7 @@ export const Comparison = () => {
                 <div 
                   key={index}
                   data-index={index}
-                  className={`grid grid-cols-12 gap-6 items-center p-6 transition-all duration-700 hover:bg-gray-50/50 ${
+                  className={`grid grid-cols-12 gap-4 items-center p-3 py-3 transition-all duration-700 hover:bg-gray-50/50 ${
                     isEven ? 'bg-[#F9F6FF]/30' : 'bg-white'
                   } ${
                     isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
@@ -137,26 +137,26 @@ export const Comparison = () => {
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   {/* Feature Info */}
-                  <div className="col-span-5 space-y-2">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-2 bg-[#7B38F3]/10 rounded-lg">
-                        <IconComponent className="w-5 h-5 text-[#7B38F3]" />
+                  <div className="col-span-5 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="p-1.5 bg-[#7B38F3]/10 rounded-lg">
+                        <IconComponent className="w-4 h-4 text-[#7B38F3]" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-[#2E2E2E]">{feature.name}</h4>
-                        <p className="text-sm text-[#7C7C7C]">{feature.description}</p>
+                        <h4 className="text-base font-semibold text-[#2E2E2E]">{feature.name}</h4>
+                        <p className="text-xs text-[#7C7C7C]">{feature.description}</p>
                       </div>
                     </div>
-                    <Badge variant="outline" className="text-xs text-[#7B38F3] border-[#7B38F3]/30 ml-11">
+                    <Badge variant="outline" className="text-xs text-[#7B38F3] border-[#7B38F3]/30 ml-7">
                       {feature.badge}
                     </Badge>
                   </div>
 
                   {/* Xdeel Column */}
                   <div className="col-span-3 text-center">
-                    <div className="flex items-center justify-center space-x-3">
-                      <div className="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center">
-                        <Check className="w-4 h-4 text-green-700" />
+                    <div className="flex items-center justify-center space-x-2">
+                      <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <Check className="w-3 h-3 text-green-700" />
                       </div>
                       <div className="text-left">
                         <p className="text-[#2E2E2E] font-semibold text-sm">{feature.xdeel}</p>
@@ -166,9 +166,9 @@ export const Comparison = () => {
 
                   {/* Traditional Column */}
                   <div className="col-span-4 text-center">
-                    <div className="flex items-center justify-center space-x-3">
-                      <div className="w-7 h-7 bg-red-100 rounded-full flex items-center justify-center">
-                        <X className="w-4 h-4 text-red-700" />
+                    <div className="flex items-center justify-center space-x-2">
+                      <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
+                        <X className="w-3 h-3 text-red-700" />
                       </div>
                       <div className="text-left">
                         <p className="text-[#7C7C7C] font-medium text-sm">{feature.traditional}</p>
@@ -182,19 +182,19 @@ export const Comparison = () => {
         </Card>
 
         {/* Summary CTA */}
-        <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-[#7B38F3] to-[#A855F7] rounded-3xl p-10 text-white shadow-2xl">
-            <h3 className="text-3xl font-bold mb-4">
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-[#7B38F3] to-[#A855F7] rounded-3xl p-8 text-white shadow-2xl">
+            <h3 className="text-2xl font-bold mb-3">
               Ready to Experience the Xdeel Advantage?
             </h3>
-            <p className="text-[#E8DCFF] mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-[#E8DCFF] mb-6 max-w-2xl mx-auto leading-relaxed">
               Join thousands of businesses and traders who chose Xdeel for faster, safer, and fully compliant cryptocurrency trading.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#7B38F3] px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors shadow-lg text-lg">
+              <button className="bg-white text-[#7B38F3] px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition-colors shadow-lg">
                 Start Trading Today
               </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-lg">
+              <button className="border-2 border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">
                 Learn More
               </button>
             </div>
