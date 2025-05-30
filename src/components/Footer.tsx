@@ -13,9 +13,7 @@ export const Footer = () => {
     ],
     "Support": [
       { name: "FAQ", href: "/faq" },
-      { name: "Contact Support", href: "/contact" },
-      { name: "24/7 Support", href: "/contact" },
-      { name: "Help Center", href: "/contact" }
+      { name: "Support", href: "/contact" }
     ],
     "Legal": [
       { name: "Terms of Service", href: "/terms" },
@@ -26,7 +24,6 @@ export const Footer = () => {
     "Account": [
       { name: "Sign In", href: "/login" },
       { name: "Sign Up", href: "/signup" },
-      { name: "Compliance", href: "/compliance" },
       { name: "Security", href: "/compliance" }
     ]
   };
@@ -38,7 +35,13 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">Xdeel</div>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/fa03512c-6722-42a7-bdbb-c74fe62f602c.png" 
+                alt="Xdeel Logo" 
+                className="h-8"
+              />
+            </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               The simplest and most secure way to buy, sell, and trade cryptocurrency. 
               Authorized by Polish Financial Supervision Authority (KNF).
