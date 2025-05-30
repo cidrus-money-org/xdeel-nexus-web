@@ -33,8 +33,8 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-xdeel-dark text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-[#1A1B2F] text-gray-300">
+      <div className="w-full px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Company Info */}
@@ -46,17 +46,17 @@ export const Footer = () => {
             </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-center text-gray-400">
-                <Phone className="w-4 h-4 mr-2 text-xdeel-primary" />
+                <Phone className="w-4 h-4 mr-2 text-[#7B38F3]" />
                 <span>+48 66 224 8895</span>
               </div>
               <div className="flex items-center text-gray-400">
-                <Mail className="w-4 h-4 mr-2 text-xdeel-primary" />
+                <Mail className="w-4 h-4 mr-2 text-[#7B38F3]" />
                 <span>support@xdeel.com</span>
               </div>
             </div>
             <div className="flex space-x-4">
               <Link to="/signup">
-                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white">
+                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg">
                   Get Started
                 </Button>
               </Link>
@@ -72,7 +72,7 @@ export const Footer = () => {
                   <li key={link.name}>
                     <Link 
                       to={link.href}
-                      className="text-gray-400 hover:text-xdeel-primary transition-colors duration-200"
+                      className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
                     >
                       {link.name}
                     </Link>

@@ -26,31 +26,31 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-24 bg-xdeel-purple w-full">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-[#F4F0FF] w-full">
+      <div className="w-full px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 text-xdeel-primary border-xdeel-primary/30 bg-white/80">
+          <Badge variant="outline" className="mb-4 text-[#7B38F3] border-[#7B38F3]/30 bg-white/80 px-4 py-2 rounded-xl">
             How It Works
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-xdeel-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2E2E2E] mb-4">
             Get Started in 3 Simple Steps
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-white border-gray-200 hover:shadow-xl transition-all duration-300">
+            <Card key={index} className="bg-white border-gray-200 hover:shadow-xl transition-all duration-300 rounded-2xl hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-xdeel-primary text-white rounded-full text-xl font-bold mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#7B38F3] text-white rounded-2xl text-xl font-bold mb-6 shadow-lg">
                   {step.step}
                 </div>
-                <div className="w-16 h-16 bg-xdeel-purple rounded-lg flex items-center justify-center mx-auto mb-6">
-                  <step.icon className="w-8 h-8 text-xdeel-primary" />
+                <div className="w-16 h-16 bg-[#F4F0FF] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
+                  <step.icon className="w-8 h-8 text-[#7B38F3]" />
                 </div>
-                <h3 className="text-xl font-semibold text-xdeel-dark mb-4">
+                <h3 className="text-xl font-bold text-[#2E2E2E] mb-4">
                   {step.title}
                 </h3>
-                <p className="text-xdeel-gray leading-relaxed">
+                <p className="text-[#7C7C7C] leading-relaxed">
                   {step.description}
                 </p>
               </CardContent>

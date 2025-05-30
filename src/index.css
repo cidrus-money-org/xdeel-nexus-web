@@ -48,17 +48,13 @@
   }
 }
 
-/* Custom Xdeel colors */
+/* Custom Xdeel brand colors - using exact hex values */
 .bg-xdeel-purple {
   background-color: #F4F0FF;
 }
 
 .bg-xdeel-dark {
   background-color: #1A1B2F;
-}
-
-.bg-xdeel-yellow {
-  background-color: #FFC43D;
 }
 
 .bg-xdeel-primary {
@@ -73,13 +69,16 @@
   color: #7C7C7C;
 }
 
-.hover\:bg-xdeel-primary-dark:hover {
-  background-color: #6B32E0;
+.text-xdeel-primary {
+  color: #7B38F3;
 }
 
-/* Grid background for hero sections */
-.bg-grid-pattern {
-  background-image: url("data:image/svg+xml,%3csvg width='32' height='32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 32V.5h32' stroke='%23E5E7EB' stroke-opacity='0.5' fill='none'/%3e%3c/svg%3e");
+.border-xdeel-primary {
+  border-color: #7B38F3;
+}
+
+.hover\:bg-xdeel-primary-dark:hover {
+  background-color: #6a2fe0;
 }
 
 /* Animation classes */
