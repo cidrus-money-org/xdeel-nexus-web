@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -61,28 +60,12 @@ const Contact = () => {
 
   const offices = [
     {
-      city: "Warsaw",
+      city: "Lodz",
       country: "Poland",
-      address: "ul. Marszałkowska 84/92, 00-514 Warsaw, Poland",
+      address: "Wierzbowa 21, Lodz 90-227, Poland",
       phone: "+48 66 224 8895",
-      email: "warsaw@xdeel.com",
+      email: "office@xdeel.com",
       isHeadquarters: true
-    },
-    {
-      city: "Krakow",
-      country: "Poland",
-      address: "ul. Floriańska 3, 31-019 Krakow, Poland",
-      phone: "+48 12 345 6789",
-      email: "krakow@xdeel.com",
-      isHeadquarters: false
-    },
-    {
-      city: "London",
-      country: "United Kingdom",
-      address: "1 Canary Wharf, London E14 5AB, UK",
-      phone: "+44 20 7946 0958",
-      email: "london@xdeel.com",
-      isHeadquarters: false
     }
   ];
 
@@ -368,30 +351,28 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Office Locations */}
+      {/* Office Location */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-xdeel-dark mb-4">
-              Our Global Offices
+              Our Office
             </h2>
             <p className="text-xl text-xdeel-gray max-w-3xl mx-auto">
-              With offices across Europe, we're closer to you than you think. Visit us or reach out to your local team.
+              Visit us at our office in Lodz, Poland or reach out to our team directly.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="max-w-md mx-auto">
             {offices.map((office, index) => (
-              <Card key={index} className={`bg-white border-gray-200 hover:border-xdeel-primary/50 transition-all duration-300 hover:shadow-lg ${office.isHeadquarters ? 'ring-2 ring-xdeel-primary/20' : ''}`}>
+              <Card key={index} className="bg-white border-gray-200 hover:border-xdeel-primary/50 transition-all duration-300 hover:shadow-lg ring-2 ring-xdeel-primary/20">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
                       <Building className="w-5 h-5 text-xdeel-primary" />
                       <CardTitle className="text-xl text-xdeel-dark">{office.city}</CardTitle>
                     </div>
-                    {office.isHeadquarters && (
-                      <Badge className="bg-xdeel-primary text-white">Headquarters</Badge>
-                    )}
+                    <Badge className="bg-xdeel-primary text-white">Headquarters</Badge>
                   </div>
                   <p className="text-xdeel-gray font-medium">{office.country}</p>
                 </CardHeader>
