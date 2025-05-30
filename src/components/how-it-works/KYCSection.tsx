@@ -29,32 +29,32 @@ export const KYCSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-[#F9F7FD] to-[#F4F0FF]">
+    <section className="py-20 bg-gradient-to-br from-[#F9F7FD] via-[#F4F0FF] to-[#EDE7FF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-4 text-xdeel-primary border-xdeel-primary/30 bg-white/80 px-4 py-2">
+        <div className="text-center mb-16">
+          <Badge variant="outline" className="mb-6 text-xdeel-primary border-xdeel-primary/40 bg-white/90 px-6 py-3 text-base font-semibold shadow-sm">
             Security & Compliance
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-xdeel-dark mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-xdeel-dark mb-8">
             Enterprise-Grade Security & Full Regulatory Compliance
           </h2>
-          <p className="text-xl text-xdeel-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
             Your security and regulatory protection are our highest priorities. We maintain 
             institutional-grade standards with full European compliance.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {securityFeatures.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-md hover:scale-105 transition-all duration-300 bg-white ring-1 ring-gray-200 rounded-xl border-0">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-xdeel-primary transition-colors duration-300">
-                  <feature.icon className="w-8 h-8 text-xdeel-primary group-hover:text-white transition-colors duration-300" />
+            <Card key={index} className="group hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white/95 backdrop-blur-sm ring-1 ring-gray-200/60 rounded-2xl border-0 shadow-lg">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gradient-to-br group-hover:from-xdeel-primary group-hover:to-purple-600 transition-all duration-300 shadow-md">
+                  <feature.icon className="w-10 h-10 text-xdeel-primary group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-lg font-semibold text-xdeel-dark mb-3">
+                <h3 className="text-xl font-bold text-xdeel-dark mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-xdeel-gray text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {feature.description}
                 </p>
               </CardContent>
@@ -62,30 +62,30 @@ export const KYCSection = () => {
           ))}
         </div>
 
-        <Separator className="my-8 bg-gray-200" />
+        <Separator className="my-12 bg-gray-300 h-px" />
 
-        {/* Elevated Regulatory Compliance Block */}
-        <div className="bg-white shadow-sm rounded-xl px-8 py-8 max-w-4xl mx-auto">
+        {/* Enhanced Regulatory Compliance Block */}
+        <div className="bg-white/95 backdrop-blur-sm shadow-xl rounded-3xl px-10 py-12 max-w-5xl mx-auto border border-gray-200/60">
           <div className="text-center">
-            <div className="w-20 h-20 bg-xdeel-primary rounded-full flex items-center justify-center mx-auto mb-6">
-              <Shield className="w-10 h-10 text-white" />
+            <div className="w-24 h-24 bg-gradient-to-br from-xdeel-primary to-purple-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+              <Shield className="w-12 h-12 text-white" />
             </div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-xdeel-dark mb-4">
+            <h3 className="text-3xl lg:text-4xl font-bold text-xdeel-dark mb-6">
               Fully Regulated & Compliant
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-4xl mx-auto font-medium">
               Licensed and regulated by the Polish Financial Supervision Authority (KNF), 
               ensuring full compliance with European financial regulations and providing 
               maximum protection for your investments and personal data.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-xl mx-auto text-center">
-              <div className="flex items-center text-gray-700 font-medium">
-                <Phone className="w-5 h-5 mr-2 text-xdeel-primary" />
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-2xl mx-auto">
+              <div className="flex items-center text-gray-700 font-semibold text-lg bg-gray-50 px-6 py-3 rounded-full">
+                <Phone className="w-6 h-6 mr-3 text-xdeel-primary" />
                 +48 66 224 8895
               </div>
-              <div className="flex items-center text-gray-700 font-medium">
-                <Mail className="w-5 h-5 mr-2 text-xdeel-primary" />
+              <div className="flex items-center text-gray-700 font-semibold text-lg bg-gray-50 px-6 py-3 rounded-full">
+                <Mail className="w-6 h-6 mr-3 text-xdeel-primary" />
                 support@xdeel.com
               </div>
             </div>
