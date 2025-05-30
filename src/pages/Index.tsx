@@ -6,7 +6,6 @@ import { HowItWorks } from "@/components/home/HowItWorks";
 import { Security } from "@/components/home/Security";
 import { Comparison } from "@/components/home/Comparison";
 import { Newsletter } from "@/components/home/Newsletter";
-import { CTA } from "@/components/home/CTA";
 
 const Index = () => {
   return (
@@ -17,7 +16,6 @@ const Index = () => {
       <Security />
       <Comparison />
       <Newsletter />
-      <CTA />
     </Layout>
   );
 };
