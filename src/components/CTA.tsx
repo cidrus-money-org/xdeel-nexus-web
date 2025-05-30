@@ -17,7 +17,7 @@ export const CTA = () => {
             {/* Badge */}
             <Badge variant="secondary" className="mb-6 bg-white/20 text-white border-white/30">
               <Shield className="w-4 h-4 mr-2" />
-              EU Licensed & Regulated
+              KNF Licensed & Regulated
             </Badge>
 
             {/* Headline */}
@@ -28,7 +28,7 @@ export const CTA = () => {
             {/* Subheading */}
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
               Join thousands of users who trust Xdeel for secure, compliant, 
-              and simple cryptocurrency trading. Get verified in minutes.
+              and simple cryptocurrency trading. Get started in minutes.
             </p>
 
             {/* CTA Buttons */}
@@ -39,7 +39,7 @@ export const CTA = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-3 text-lg">
-                Contact Sales
+                Contact Support
               </Button>
             </div>
 
@@ -47,11 +47,11 @@ export const CTA = () => {
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-blue-100">
               <div className="flex items-center">
                 <Shield className="w-4 h-4 mr-2" />
-                Bank-Grade Security
+                KNF Authorization
               </div>
               <div className="flex items-center">
                 <Zap className="w-4 h-4 mr-2" />
-                Instant Verification
+                Instant Setup
               </div>
               <div className="flex items-center">
                 <Shield className="w-4 h-4 mr-2" />
