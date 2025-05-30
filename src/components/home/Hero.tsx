@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-xdeel-purple pt-16 pb-24">
+    <section className="relative overflow-hidden bg-xdeel-purple pt-16 pb-24 w-full">
       <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="w-full px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-left">
