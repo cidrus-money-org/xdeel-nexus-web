@@ -16,6 +16,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Legal from "./pages/Legal";
 import KycOverview from "./pages/KycOverview";
+import Security from "./pages/Security";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/kyc-overview" element={<KycOverview />} />
+          <Route path="/security" element={<Security />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

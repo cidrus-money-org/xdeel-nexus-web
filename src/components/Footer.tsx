@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail } from "lucide-react";
@@ -24,7 +23,7 @@ export const Footer = () => {
     "Account": [
       { name: "Sign In", href: "/login" },
       { name: "Sign Up", href: "/signup" },
-      { name: "Security", href: "/compliance" }
+      { name: "Security", href: "/security" }
     ]
   };
 
