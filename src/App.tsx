@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -47,6 +46,7 @@ import Enable2FA from "./pages/knowledge-base/security/Enable2FA";
 import PhishingAwareness from "./pages/knowledge-base/security/PhishingAwareness";
 import WalletProtection from "./pages/knowledge-base/security/WalletProtection";
 import Keys from "./pages/knowledge-base/crypto-101/Keys";
+import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
 
 const queryClient = new QueryClient();
 
