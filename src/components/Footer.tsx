@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail } from "lucide-react";
@@ -82,6 +83,31 @@ export const Footer = () => {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Payment Methods Section */}
+        <div className="mb-8">
+          <h3 className="text-white font-semibold mb-4">Accepted Payment Methods</h3>
+          <div className="flex items-center space-x-6">
+            {/* SEPA */}
+            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
+              <span className="text-[#003d82] font-bold text-lg">SEPA</span>
+            </div>
+            
+            {/* Visa */}
+            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
+              <span className="text-[#1a1f71] font-bold text-lg">VISA</span>
+            </div>
+            
+            {/* MasterCard */}
+            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
+              <div className="flex items-center space-x-1">
+                <div className="w-6 h-4 bg-[#eb001b] rounded-full"></div>
+                <div className="w-6 h-4 bg-[#ff5f00] rounded-full -ml-3"></div>
+                <span className="text-black font-semibold text-sm ml-2">MasterCard</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <Separator className="bg-gray-800 mb-8" />
