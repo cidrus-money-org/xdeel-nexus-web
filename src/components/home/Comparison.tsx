@@ -104,7 +104,7 @@ export const Comparison = () => {
               <div className="col-span-3 text-center">
                 <div className="inline-flex items-center space-x-2">
                   <img 
-                    src="/lovable-uploads/a04c51e1-686a-444a-aca8-79f1c89c8647.png" 
+                    src="/lovable-uploads/9d8bd29d-20cc-4cbc-8d7c-37927b5a3e8c.png" 
                     alt="Xdeel Logo" 
                     className="w-7 h-7 object-contain"
                   />
