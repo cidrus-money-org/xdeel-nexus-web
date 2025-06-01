@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import {
   Accordion,
@@ -24,6 +23,7 @@ import {
   Lock,
   Globe
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   const gettingStartedFaqs = [
@@ -131,37 +131,43 @@ const FAQ = () => {
       title: "Trading Guide for Beginners",
       description: "Complete guide to cryptocurrency trading on Xdeel",
       type: "Guide",
-      readTime: "15 min read"
+      readTime: "15 min read",
+      href: "/resources/trading-guide"
     },
     {
       title: "Security Best Practices",
       description: "How to keep your account and funds secure",
       type: "Security",
-      readTime: "10 min read"
+      readTime: "10 min read",
+      href: "/resources/security-guide"
     },
     {
       title: "API Documentation",
       description: "Technical documentation for developers",
       type: "Technical",
-      readTime: "30 min read"
+      readTime: "30 min read",
+      href: "/resources/api-docs"
     },
     {
       title: "Fee Schedule",
       description: "Complete breakdown of all fees and charges",
       type: "Pricing",
-      readTime: "5 min read"
+      readTime: "5 min read",
+      href: "/resources/fee-schedule"
     },
     {
       title: "Supported Countries",
       description: "List of countries where Xdeel is available",
       type: "Legal",
-      readTime: "3 min read"
+      readTime: "3 min read",
+      href: "/resources/supported-countries"
     },
     {
       title: "Tax Reporting Guide",
       description: "How to report cryptocurrency transactions for taxes",
       type: "Tax",
-      readTime: "20 min read"
+      readTime: "20 min read",
+      href: "/resources/tax-guide"
     }
   ];
 
@@ -422,25 +428,27 @@ const FAQ = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {resources.map((resource, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer">
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <Badge variant="outline" className="text-xs">
-                      {resource.type}
-                    </Badge>
-                    <FileText className="w-5 h-5 text-xdeel-gray" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-xdeel-dark mb-2">
-                    {resource.title}
-                  </h3>
-                  <p className="text-xdeel-gray mb-3">
-                    {resource.description}
-                  </p>
-                  <div className="text-sm text-xdeel-gray">
-                    {resource.readTime}
-                  </div>
-                </CardContent>
-              </Card>
+              <Link key={index} to={resource.href}>
+                <Card className="hover:shadow-lg hover:border-xdeel-primary/50 transition-all duration-200 cursor-pointer h-full">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-3">
+                      <Badge variant="outline" className="text-xs">
+                        {resource.type}
+                      </Badge>
+                      <FileText className="w-5 h-5 text-xdeel-gray" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-xdeel-dark mb-2">
+                      {resource.title}
+                    </h3>
+                    <p className="text-xdeel-gray mb-3">
+                      {resource.description}
+                    </p>
+                    <div className="text-sm text-xdeel-gray">
+                      {resource.readTime}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

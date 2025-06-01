@@ -18,6 +18,12 @@ import Legal from "./pages/Legal";
 import KycOverview from "./pages/KycOverview";
 import Security from "./pages/Security";
 import NotFound from "./pages/NotFound";
+import TradingGuide from "./pages/resources/TradingGuide";
+import SecurityGuide from "./pages/resources/SecurityGuide";
+import ApiDocs from "./pages/resources/ApiDocs";
+import FeeSchedule from "./pages/resources/FeeSchedule";
+import SupportedCountries from "./pages/resources/SupportedCountries";
+import TaxGuide from "./pages/resources/TaxGuide";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +47,12 @@ const App = () => (
           <Route path="/legal" element={<Legal />} />
           <Route path="/kyc-overview" element={<KycOverview />} />
           <Route path="/security" element={<Security />} />
+          <Route path="/resources/trading-guide" element={<TradingGuide />} />
+          <Route path="/resources/security-guide" element={<SecurityGuide />} />
+          <Route path="/resources/api-docs" element={<ApiDocs />} />
+          <Route path="/resources/fee-schedule" element={<FeeSchedule />} />
+          <Route path="/resources/supported-countries" element={<SupportedCountries />} />
+          <Route path="/resources/tax-guide" element={<TaxGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
