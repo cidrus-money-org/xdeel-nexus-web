@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -45,6 +46,9 @@ import ReadingCharts from "./pages/knowledge-base/trading/ReadingCharts";
 import Enable2FA from "./pages/knowledge-base/security/Enable2FA";
 import PhishingAwareness from "./pages/knowledge-base/security/PhishingAwareness";
 import WalletProtection from "./pages/knowledge-base/security/WalletProtection";
+import FakeSupport from "./pages/knowledge-base/security/FakeSupport";
+import ReportSuspicious from "./pages/knowledge-base/security/ReportSuspicious";
+import PasswordTips from "./pages/knowledge-base/security/PasswordTips";
 import Keys from "./pages/knowledge-base/crypto-101/Keys";
 import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
 import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategory";
@@ -78,6 +82,9 @@ const App = () => (
           <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
           <Route path="/knowledge-base/security/phishing-awareness" element={<PhishingAwareness />} />
           <Route path="/knowledge-base/security/wallet-protection" element={<WalletProtection />} />
+          <Route path="/knowledge-base/security/fake-support" element={<FakeSupport />} />
+          <Route path="/knowledge-base/security/report-suspicious" element={<ReportSuspicious />} />
+          <Route path="/knowledge-base/security/password-tips" element={<PasswordTips />} />
           <Route path="/knowledge-base/crypto-101/keys" element={<Keys />} />
           <Route path="/knowledge-base/crypto-101/stablecoins" element={<Stablecoins />} />
           <Route path="/updates" element={<Updates />} />
