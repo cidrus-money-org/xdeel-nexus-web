@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,7 +36,12 @@ import VerificationGuide from "./pages/knowledge-base/getting-started/Verificati
 import PlatformTour from "./pages/knowledge-base/getting-started/PlatformTour";
 import TradingCategory from "./pages/knowledge-base/TradingCategory";
 import PaymentsCategory from "./pages/knowledge-base/PaymentsCategory";
+import SecurityCategory from "./pages/knowledge-base/SecurityCategory";
+import Crypto101Category from "./pages/knowledge-base/Crypto101Category";
+import ApiDocsCategory from "./pages/knowledge-base/ApiDocsCategory";
+import ComplianceCategory from "./pages/knowledge-base/ComplianceCategory";
 import OrderTypes from "./pages/knowledge-base/trading/OrderTypes";
+import Enable2FA from "./pages/knowledge-base/security/Enable2FA";
 
 const queryClient = new QueryClient();
 
