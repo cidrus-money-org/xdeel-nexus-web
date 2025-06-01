@@ -23,9 +23,9 @@ export const Footer = () => {
 
   return (
     <footer className="bg-[#1A1B2F] text-gray-300">
-      <div className="w-full px-6 lg:px-8 py-16">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
+        {/* Main Footer Content - Centered */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-4">
