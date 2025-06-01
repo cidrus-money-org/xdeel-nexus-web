@@ -107,16 +107,22 @@ const KnowledgeBase = () => {
       icon: Bitcoin
     },
     {
-      title: "API Documentation",
-      description: "Complete technical reference for developers",
-      readTime: "30 min read",
-      category: "Technical",
-      href: "/resources/api-docs",
-      icon: Code
+      title: "Different Types of Networks",
+      description: "Understanding PoW, PoS, Layer 2s and more",
+      readTime: "14 min read",
+      category: "Crypto 101",
+      href: "/knowledge-base/network-types",
+      icon: Zap
     }
   ];
 
   const recentlyUpdated = [
+    {
+      title: "Network Types Guide",
+      description: "New comprehensive guide covering different blockchain networks",
+      lastUpdated: "Today",
+      href: "/knowledge-base/network-types"
+    },
     {
       title: "Fee Schedule",
       description: "Updated trading and withdrawal fees",
@@ -128,12 +134,6 @@ const KnowledgeBase = () => {
       description: "Current list of supported regions",
       lastUpdated: "1 week ago",
       href: "/resources/supported-countries"
-    },
-    {
-      title: "Tax Reporting Guide",
-      description: "2024 cryptocurrency tax guidelines",
-      lastUpdated: "2 weeks ago",
-      href: "/resources/tax-guide"
     }
   ];
 
@@ -258,9 +258,11 @@ const KnowledgeBase = () => {
                 Stay up to date with the latest changes
               </p>
             </div>
-            <Button variant="outline">
-              View All Updates
-            </Button>
+            <Link to="/updates">
+              <Button variant="outline">
+                View All Updates
+              </Button>
+            </Link>
           </div>
 
           <div className="space-y-4">

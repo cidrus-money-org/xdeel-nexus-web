@@ -1,9 +1,16 @@
-
 import { Layout } from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { 
+  Breadcrumb, 
+  BreadcrumbItem, 
+  BreadcrumbLink, 
+  BreadcrumbList, 
+  BreadcrumbSeparator, 
+  BreadcrumbPage 
+} from "@/components/ui/breadcrumb";
 import { ArrowLeft, Clock, Calendar, Share2, Network, Layers, Shield, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -52,6 +59,25 @@ const NetworkTypes = () => {
       {/* Header */}
       <section className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <Breadcrumb className="mb-6">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/knowledge-base">Knowledge Base</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/knowledge-base#crypto-101">Blockchain & Crypto 101</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbPage>Different Types of Networks</BreadcrumbPage>
+            </BreadcrumbList>
+          </Breadcrumb>
+          
           <Link to="/knowledge-base" className="inline-flex items-center text-xdeel-primary hover:text-xdeel-primary/80 mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Knowledge Base

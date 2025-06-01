@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Features from "./pages/Features";
 import HowItWorks from "./pages/HowItWorks";
 import KnowledgeBase from "./pages/KnowledgeBase";
+import Updates from "./pages/Updates";
 import Compliance from "./pages/Compliance";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/updates" element={<Updates />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

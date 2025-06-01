@@ -4,28 +4,34 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, BookOpen, Clock, TrendingUp, Shield, CreditCard, Target } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Share2, TrendingUp, DollarSign, BarChart3, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const TradingGuide = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/faq" className="inline-flex items-center text-xdeel-primary hover:text-xdeel-primary/80 mb-6">
+          <Link to="/knowledge-base" className="inline-flex items-center text-xdeel-primary hover:text-xdeel-primary/80 mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to FAQ
+            Back to Knowledge Base
           </Link>
           
           <div className="flex items-center mb-4">
-            <Badge variant="outline" className="mr-4 text-xdeel-primary border-xdeel-primary/30">
-              <BookOpen className="w-4 h-4 mr-2" />
-              Guide
+            <Badge variant="outline" className="mr-4 text-green-600 border-green-300">
+              <TrendingUp className="w-4 h-4 mr-2" />
+              Trading
             </Badge>
-            <div className="flex items-center text-xdeel-gray">
-              <Clock className="w-4 h-4 mr-2" />
-              15 min read
+            <div className="flex items-center text-xdeel-gray space-x-4">
+              <div className="flex items-center">
+                <Clock className="w-4 h-4 mr-2" />
+                15 min read
+              </div>
+              <div className="flex items-center">
+                <Calendar className="w-4 h-4 mr-2" />
+                Last updated: Dec 1, 2024
+              </div>
             </div>
           </div>
           
@@ -33,7 +39,7 @@ const TradingGuide = () => {
             Trading Guide for Beginners
           </h1>
           <p className="text-xl text-xdeel-gray">
-            A comprehensive step-by-step guide to help you start your cryptocurrency trading journey on Xdeel
+            Complete step-by-step guide to cryptocurrency trading on Xdeel
           </p>
         </div>
       </section>
@@ -42,228 +48,160 @@ const TradingGuide = () => {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            
-            {/* What is Cryptocurrency */}
             <Card className="mb-8">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <TrendingUp className="w-6 h-6 text-xdeel-primary mr-3" />
-                  <h2 className="text-2xl font-bold text-xdeel-dark">What is Cryptocurrency and How Trading Works</h2>
-                </div>
-                <p className="text-xdeel-gray mb-4">
-                  Cryptocurrency is a digital form of money that uses cryptography for security. Unlike traditional currencies, 
-                  cryptocurrencies operate on decentralized networks called blockchains.
-                </p>
-                <p className="text-xdeel-gray mb-4">
-                  Trading cryptocurrency involves buying and selling digital assets to profit from price movements. On Xdeel, 
-                  you can trade over 50 different cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), and many others.
-                </p>
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-xdeel-dark mb-2">Key Benefits of Trading on Xdeel:</h4>
-                  <ul className="text-xdeel-gray space-y-1">
-                    <li>• KNF authorized and regulated platform</li>
-                    <li>• Real-time market prices</li>
-                    <li>• Advanced security measures</li>
-                    <li>• 24/7 customer support</li>
-                  </ul>
-                </div>
+                <h2 className="text-2xl font-bold text-xdeel-dark mb-4">What You'll Learn</h2>
+                <ul className="space-y-2 text-xdeel-gray">
+                  <li>• How to create and verify your Xdeel account</li>
+                  <li>• Understanding different order types</li>
+                  <li>• Reading charts and market data</li>
+                  <li>• Risk management strategies</li>
+                  <li>• Security best practices while trading</li>
+                </ul>
               </CardContent>
             </Card>
 
-            {/* Account Creation */}
             <Card className="mb-8">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <Shield className="w-6 h-6 text-xdeel-primary mr-3" />
-                  <h2 className="text-2xl font-bold text-xdeel-dark">Creating and Verifying Your Account</h2>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Step 1: Sign Up</h4>
-                    <p className="text-xdeel-gray">Visit xdeel.com and click "Sign Up". Provide your email address and create a strong password.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Step 2: Email Verification</h4>
-                    <p className="text-xdeel-gray">Check your email and click the verification link to activate your account.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Step 3: KYC Verification</h4>
-                    <p className="text-xdeel-gray">Complete the Know Your Customer (KYC) process by providing:</p>
-                    <ul className="text-xdeel-gray mt-2 ml-4">
-                      <li>• Government-issued photo ID</li>
-                      <li>• Proof of address (utility bill or bank statement)</li>
-                      <li>• Selfie for identity verification</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Depositing Funds */}
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <CreditCard className="w-6 h-6 text-xdeel-primary mr-3" />
-                  <h2 className="text-2xl font-bold text-xdeel-dark">How to Deposit Funds</h2>
-                </div>
-                <p className="text-xdeel-gray mb-4">
-                  Once your account is verified, you can deposit funds using various payment methods:
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Bank Transfer (SEPA)</h4>
-                    <p className="text-sm text-xdeel-gray">• Lowest fees</p>
-                    <p className="text-sm text-xdeel-gray">• 1-2 business days</p>
-                    <p className="text-sm text-xdeel-gray">• Best for large amounts</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Credit/Debit Card</h4>
-                    <p className="text-sm text-xdeel-gray">• Instant processing</p>
-                    <p className="text-sm text-xdeel-gray">• Higher fees</p>
-                    <p className="text-sm text-xdeel-gray">• Great for quick trades</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Order Types */}
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <Target className="w-6 h-6 text-xdeel-primary mr-3" />
-                  <h2 className="text-2xl font-bold text-xdeel-dark">Market vs. Limit Orders Explained</h2>
-                </div>
+                <h2 className="text-2xl font-bold text-xdeel-dark mb-6">Getting Started</h2>
+                
                 <div className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Market Orders</h4>
-                    <p className="text-xdeel-gray mb-2">
-                      Execute immediately at the current market price. Best for when you want to buy or sell quickly.
-                    </p>
-                    <div className="bg-green-50 p-3 rounded border-l-4 border-green-400">
-                      <p className="text-sm text-green-700">✓ Use when: You want immediate execution and current price is acceptable</p>
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-xdeel-primary text-white rounded-full flex items-center justify-center mr-4 mt-1 font-bold text-sm">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-xdeel-dark mb-2">Create Your Account</h4>
+                      <p className="text-xdeel-gray">
+                        Sign up for a Xdeel account and complete the KYC verification process. This ensures 
+                        compliance with regulations and protects your account.
+                      </p>
                     </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Limit Orders</h4>
-                    <p className="text-xdeel-gray mb-2">
-                      Set a specific price at which you want to buy or sell. The order only executes when the market reaches your price.
-                    </p>
-                    <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
-                      <p className="text-sm text-blue-700">✓ Use when: You want to control the exact price and are willing to wait</p>
+
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-xdeel-primary text-white rounded-full flex items-center justify-center mr-4 mt-1 font-bold text-sm">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-xdeel-dark mb-2">Secure Your Account</h4>
+                      <p className="text-xdeel-gray">
+                        Enable two-factor authentication (2FA) and use a strong, unique password. 
+                        Consider using a hardware security key for maximum protection.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-xdeel-primary text-white rounded-full flex items-center justify-center mr-4 mt-1 font-bold text-sm">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-xdeel-dark mb-2">Fund Your Account</h4>
+                      <p className="text-xdeel-gray">
+                        Deposit funds using bank transfer, credit card, or other supported payment methods. 
+                        Start with a small amount while you learn.
+                      </p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* First Trade */}
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-xdeel-dark mb-4">Placing Your First Trade</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="bg-xdeel-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1">1</div>
-                    <div>
-                      <h4 className="font-semibold text-xdeel-dark">Choose Your Cryptocurrency</h4>
-                      <p className="text-xdeel-gray">Start with popular coins like Bitcoin or Ethereum for your first trade.</p>
+                <h2 className="text-2xl font-bold text-xdeel-dark mb-6">Understanding Order Types</h2>
+                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 p-6 rounded-lg">
+                    <div className="flex items-center mb-3">
+                      <DollarSign className="w-6 h-6 text-blue-600 mr-2" />
+                      <h4 className="font-semibold text-blue-800">Market Orders</h4>
                     </div>
+                    <p className="text-blue-700 text-sm">
+                      Execute immediately at the current market price. Best for quick trades when you want 
+                      to buy or sell right away.
+                    </p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="bg-xdeel-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1">2</div>
-                    <div>
-                      <h4 className="font-semibold text-xdeel-dark">Select Order Type</h4>
-                      <p className="text-xdeel-gray">Choose between market order (immediate) or limit order (specific price).</p>
+
+                  <div className="bg-green-50 p-6 rounded-lg">
+                    <div className="flex items-center mb-3">
+                      <BarChart3 className="w-6 h-6 text-green-600 mr-2" />
+                      <h4 className="font-semibold text-green-800">Limit Orders</h4>
                     </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-xdeel-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1">3</div>
-                    <div>
-                      <h4 className="font-semibold text-xdeel-dark">Enter Amount</h4>
-                      <p className="text-xdeel-gray">Specify how much you want to buy (minimum €10).</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-xdeel-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-4 mt-1">4</div>
-                    <div>
-                      <h4 className="font-semibold text-xdeel-dark">Review and Confirm</h4>
-                      <p className="text-xdeel-gray">Check all details including fees before confirming your trade.</p>
-                    </div>
+                    <p className="text-green-700 text-sm">
+                      Set a specific price at which you want to buy or sell. The order will only execute 
+                      when the market reaches your specified price.
+                    </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Portfolio Management */}
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-xdeel-dark mb-4">Managing Your Portfolio and Taking Profits</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Portfolio Diversification</h4>
-                    <p className="text-xdeel-gray">Don't put all your money in one cryptocurrency. Spread your investment across different coins to reduce risk.</p>
+                <h2 className="text-2xl font-bold text-xdeel-dark mb-6">Risk Management</h2>
+                
+                <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-400 mb-6">
+                  <div className="flex items-center mb-2">
+                    <Shield className="w-5 h-5 text-red-600 mr-2" />
+                    <h4 className="font-semibold text-red-800">Important Risk Warning</h4>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Setting Profit Targets</h4>
-                    <p className="text-xdeel-gray">Decide in advance when you'll take profits. Many traders use the strategy of selling 25%, 50%, or 75% at predetermined price levels.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Stop-Loss Orders</h4>
-                    <p className="text-xdeel-gray">Use stop-loss orders to automatically sell if prices drop below a certain level, limiting your potential losses.</p>
-                  </div>
-                </div>
-                <div className="bg-yellow-50 p-4 rounded-lg mt-4">
-                  <h4 className="font-semibold text-yellow-800 mb-2">⚠️ Important Risk Warning</h4>
-                  <p className="text-yellow-700 text-sm">
-                    Cryptocurrency trading involves significant risk. Never invest more than you can afford to lose. 
-                    Past performance does not guarantee future results.
+                  <p className="text-red-700">
+                    Cryptocurrency trading involves significant risk. Never invest more than you can afford to lose, 
+                    and always do your own research before making trading decisions.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
 
-            {/* Continued Learning */}
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-xdeel-dark mb-4">Tips for Continued Learning</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-xdeel-dark mb-2">Educational Resources</h4>
-                    <ul className="text-xdeel-gray space-y-1">
-                      <li>• Read our Security Best Practices guide</li>
-                      <li>• Follow crypto news and market analysis</li>
-                      <li>• Join our community forums</li>
-                      <li>• Attend Xdeel webinars</li>
-                    </ul>
-                  </div>
+                <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-xdeel-dark mb-2">Start Small</h4>
-                    <ul className="text-xdeel-gray space-y-1">
-                      <li>• Begin with small amounts</li>
-                      <li>• Practice with limit orders</li>
-                      <li>• Keep detailed records</li>
-                      <li>• Learn from each trade</li>
-                    </ul>
+                    <p className="text-xdeel-gray">
+                      Begin with small amounts while you learn. Consider practicing with paper trading first.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-xdeel-dark mb-2">Diversify Your Portfolio</h4>
+                    <p className="text-xdeel-gray">
+                      Don't put all your funds into a single cryptocurrency. Spread your risk across different assets.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-xdeel-dark mb-2">Use Stop-Loss Orders</h4>
+                    <p className="text-xdeel-gray">
+                      Set stop-loss orders to automatically sell if prices drop below a certain level.
+                    </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Separator className="my-8" />
-
-            {/* CTA */}
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-xdeel-dark mb-4">Ready to Start Trading?</h3>
-              <p className="text-xdeel-gray mb-6">
-                Join thousands of users who trust Xdeel for secure cryptocurrency trading.
+            <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white text-center">
+              <h3 className="text-2xl font-bold mb-4">Ready to Start Trading?</h3>
+              <p className="text-white/90 mb-6">
+                Put your knowledge into practice with our user-friendly trading platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-xdeel-primary hover:bg-xdeel-primary/90">
-                  Create Account
+                <Button size="lg" variant="secondary">
+                  Start Trading Now
                 </Button>
-                <Button variant="outline" size="lg">
-                  Contact Support
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+                  View Security Guide
                 </Button>
               </div>
+            </div>
+          </div>
+
+          <Separator className="my-8" />
+
+          {/* Share and Navigation */}
+          <div className="flex items-center justify-between">
+            <Button variant="outline" size="sm">
+              <Share2 className="w-4 h-4 mr-2" />
+              Share Article
+            </Button>
+            <div className="text-sm text-xdeel-gray">
+              Was this article helpful? <Button variant="link" className="p-0 text-xdeel-primary">Let us know</Button>
             </div>
           </div>
         </div>
