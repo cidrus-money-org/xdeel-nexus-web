@@ -77,31 +77,31 @@ export const Footer = () => {
           <Separator className="bg-gray-800 mb-6" />
           <div className="flex justify-end">
             <div>
-              <h3 className="text-gray-400 font-medium mb-4 text-sm">Trusted Payment Partners</h3>
-              <div className="flex items-center gap-x-5">
+              <h3 className="text-gray-400 font-medium mb-4 text-xs">Trusted Payment Partners</h3>
+              <div className="flex items-center gap-x-4">
                 {/* SEPA */}
                 <div className="flex items-center" aria-label="SEPA payments accepted">
-                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                    <rect width="48" height="24" rx="4" fill="#003d82"/>
-                    <circle cx="12" cy="12" r="6" fill="#ffffff"/>
-                    <text x="14" y="16" fill="#003d82" fontSize="8" fontWeight="bold">€</text>
-                    <text x="20" y="16" fill="#ffffff" fontSize="6" fontWeight="bold">SEPA</text>
+                  <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 opacity-80 hover:opacity-100 transition-opacity">
+                    <rect width="48" height="20" rx="3" fill="#003d82"/>
+                    <circle cx="10" cy="10" r="5" fill="#ffffff"/>
+                    <text x="12" y="14" fill="#003d82" fontSize="7" fontWeight="bold">€</text>
+                    <text x="18" y="13" fill="#ffffff" fontSize="5" fontWeight="bold">SEPA</text>
                   </svg>
                 </div>
                 
                 {/* Visa */}
                 <div className="flex items-center" aria-label="Visa payments accepted">
-                  <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                    <text x="2" y="18" fill="#1a1f71" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">VISA</text>
+                  <svg width="50" height="20" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 opacity-80 hover:opacity-100 transition-opacity">
+                    <text x="2" y="15" fill="#1a1f71" fontSize="12" fontWeight="bold" fontFamily="Arial, sans-serif">VISA</text>
                   </svg>
                 </div>
                 
                 {/* Mastercard */}
                 <div className="flex items-center" aria-label="Mastercard payments accepted">
-                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                    <circle cx="16" cy="12" r="8" fill="#eb001b"/>
-                    <circle cx="32" cy="12" r="8" fill="#ff5f00"/>
-                    <path d="M24 6c1.6 2.4 2.4 5.2 2.4 6s-.8 3.6-2.4 6c-1.6-2.4-2.4-5.2-2.4-6s.8-3.6 2.4-6z" fill="#ff5f00"/>
+                  <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 opacity-80 hover:opacity-100 transition-opacity">
+                    <circle cx="13" cy="10" r="7" fill="#eb001b"/>
+                    <circle cx="27" cy="10" r="7" fill="#ff5f00"/>
+                    <path d="M20 5c1.4 2.1 2.1 4.6 2.1 5s-.7 2.9-2.1 5c-1.4-2.1-2.1-4.6-2.1-5s.7-2.9 2.1-5z" fill="#ff5f00"/>
                   </svg>
                 </div>
               </div>
