@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,18 +7,18 @@ export const Footer = () => {
   const footerLinks = {
     "Company": [
       { name: "How It Works", href: "/how-it-works" },
-      { name: "Features", href: "/features" },
-      { name: "Contact", href: "/contact" }
+      { name: "Features", href: "/features" }
     ],
     "Support": [
-      { name: "FAQ", href: "/faq" },
-      { name: "Support", href: "/contact" }
+      { name: "Support", href: "/contact" },
+      { name: "FAQ", href: "/faq" }
     ],
     "Legal": [
       { name: "Terms of Service", href: "/terms" },
       { name: "Privacy and Cookie Policy", href: "/privacy" },
       { name: "Legal and Compliance", href: "/legal" },
-      { name: "Compliance and KYC Overview", href: "/kyc-overview" }
+      { name: "Compliance and KYC Overview", href: "/kyc-overview" },
+      { name: "Security", href: "/security" }
     ]
   };
 
@@ -27,9 +26,9 @@ export const Footer = () => {
     <footer className="bg-[#1A1B2F] text-gray-300">
       <div className="w-full px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <div className="mb-4">
               <img 
                 src="/lovable-uploads/fa03512c-6722-42a7-bdbb-c74fe62f602c.png" 
@@ -56,13 +55,13 @@ export const Footer = () => {
           {/* Footer Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="text-white font-semibold mb-4">{category}</h3>
+              <h3 className="text-white font-medium mb-4 text-sm">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
                     <Link 
                       to={link.href}
-                      className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
+                      className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -72,61 +71,36 @@ export const Footer = () => {
             </div>
           ))}
 
-          {/* Account & Payment Methods Section */}
+          {/* Trusted Payment Partners */}
           <div>
-            {/* Accepted Payment Methods */}
-            <div className="mb-8">
-              <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Accepted Payment Methods</h3>
-              <div className="flex justify-end items-center gap-x-4 mb-6">
-                {/* SEPA */}
-                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
-                  <span className="text-[#003d82] font-bold text-sm">SEPA</span>
-                </div>
-                
-                {/* Visa */}
-                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
-                  <span className="text-[#1a1f71] font-bold text-sm">VISA</span>
-                </div>
-                
-                {/* MasterCard */}
-                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
-                  <div className="flex items-center">
-                    <div className="w-5 h-3 bg-[#eb001b] rounded-full"></div>
-                    <div className="w-5 h-3 bg-[#ff5f00] rounded-full -ml-2"></div>
-                    <span className="text-black font-semibold text-xs ml-1">Mastercard</span>
+            <h3 className="text-white font-medium mb-4 text-sm">Trusted Payment Partners</h3>
+            <div className="flex items-center gap-x-4">
+              {/* SEPA */}
+              <div className="bg-white rounded-md px-3 py-2 flex items-center shadow-sm" aria-label="SEPA payments accepted">
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-[#003d82] rounded-full flex items-center justify-center mr-1">
+                    <span className="text-white text-xs font-bold">€</span>
                   </div>
+                  <span className="text-[#003d82] font-bold text-xs">SEPA</span>
                 </div>
               </div>
+              
+              {/* Visa */}
+              <div className="h-6 flex items-center" aria-label="Visa payments accepted">
+                <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.4 1.2L15.6 14.8H12.2L15 1.2H18.4ZM31.6 1.2L28.8 14.8H25.4L28.2 1.2H31.6ZM9.8 1.2L6.2 11.4L5.4 7.8L4.2 2.4C4 1.6 3.4 1.2 2.6 1.2H0.2L0 2C1.8 2.4 3.4 3 4.8 3.8L7.4 14.8H11L17.4 1.2H9.8ZM43.4 1.2H46.2L48 14.8H44.8L44.4 12.6H40.6L39.8 14.8H36.4L43.4 1.2ZM41.4 9.8H43.8L43 6.2L41.4 9.8Z" fill="#1a1f71"/>
+                </svg>
+              </div>
+              
+              {/* Mastercard */}
+              <div className="h-6 flex items-center" aria-label="Mastercard payments accepted">
+                <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14" cy="11" r="10" fill="#eb001b"/>
+                  <circle cx="22" cy="11" r="10" fill="#ff5f00"/>
+                  <path d="M18 5c1.326 2.067 2 4.444 2 7s-.674 4.933-2 7c-1.326-2.067-2-4.444-2-7s.674-4.933 2-7z" fill="#ff5f00"/>
+                </svg>
+              </div>
             </div>
-
-            {/* Account Links */}
-            <h3 className="text-white font-semibold mb-4">Account</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link 
-                  to="/login"
-                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
-                >
-                  Sign In
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/signup"
-                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
-                >
-                  Sign Up
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/security"
-                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
-                >
-                  Security
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
 
