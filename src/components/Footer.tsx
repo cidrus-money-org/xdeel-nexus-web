@@ -26,7 +26,7 @@ export const Footer = () => {
     <footer className="bg-[#1A1B2F] text-gray-300">
       <div className="w-full px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-4">
@@ -70,41 +70,44 @@ export const Footer = () => {
               </ul>
             </div>
           ))}
+        </div>
 
-          {/* Trusted Payment Partners */}
-          <div>
-            <h3 className="text-white font-medium mb-4 text-sm">Trusted Payment Partners</h3>
-            <div className="flex items-center gap-x-4">
-              {/* SEPA */}
-              <div className="bg-white rounded-md px-3 py-2 flex items-center shadow-sm" aria-label="SEPA payments accepted">
-                <div className="flex items-center">
-                  <div className="w-6 h-6 bg-[#003d82] rounded-full flex items-center justify-center mr-1">
-                    <span className="text-white text-xs font-bold">€</span>
-                  </div>
-                  <span className="text-[#003d82] font-bold text-xs">SEPA</span>
+        {/* Trusted Payment Partners */}
+        <div className="mb-8">
+          <Separator className="bg-gray-800 mb-6" />
+          <div className="flex justify-end">
+            <div>
+              <h3 className="text-gray-400 font-medium mb-4 text-sm">Trusted Payment Partners</h3>
+              <div className="flex items-center gap-x-5">
+                {/* SEPA */}
+                <div className="flex items-center" aria-label="SEPA payments accepted">
+                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
+                    <rect width="48" height="24" rx="4" fill="#003d82"/>
+                    <circle cx="12" cy="12" r="6" fill="#ffffff"/>
+                    <text x="14" y="16" fill="#003d82" fontSize="8" fontWeight="bold">€</text>
+                    <text x="20" y="16" fill="#ffffff" fontSize="6" fontWeight="bold">SEPA</text>
+                  </svg>
                 </div>
-              </div>
-              
-              {/* Visa */}
-              <div className="h-6 flex items-center" aria-label="Visa payments accepted">
-                <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.4 1.2L15.6 14.8H12.2L15 1.2H18.4ZM31.6 1.2L28.8 14.8H25.4L28.2 1.2H31.6ZM9.8 1.2L6.2 11.4L5.4 7.8L4.2 2.4C4 1.6 3.4 1.2 2.6 1.2H0.2L0 2C1.8 2.4 3.4 3 4.8 3.8L7.4 14.8H11L17.4 1.2H9.8ZM43.4 1.2H46.2L48 14.8H44.8L44.4 12.6H40.6L39.8 14.8H36.4L43.4 1.2ZM41.4 9.8H43.8L43 6.2L41.4 9.8Z" fill="#1a1f71"/>
-                </svg>
-              </div>
-              
-              {/* Mastercard */}
-              <div className="h-6 flex items-center" aria-label="Mastercard payments accepted">
-                <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="14" cy="11" r="10" fill="#eb001b"/>
-                  <circle cx="22" cy="11" r="10" fill="#ff5f00"/>
-                  <path d="M18 5c1.326 2.067 2 4.444 2 7s-.674 4.933-2 7c-1.326-2.067-2-4.444-2-7s.674-4.933 2-7z" fill="#ff5f00"/>
-                </svg>
+                
+                {/* Visa */}
+                <div className="flex items-center" aria-label="Visa payments accepted">
+                  <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
+                    <text x="2" y="18" fill="#1a1f71" fontSize="14" fontWeight="bold" fontFamily="Arial, sans-serif">VISA</text>
+                  </svg>
+                </div>
+                
+                {/* Mastercard */}
+                <div className="flex items-center" aria-label="Mastercard payments accepted">
+                  <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
+                    <circle cx="16" cy="12" r="8" fill="#eb001b"/>
+                    <circle cx="32" cy="12" r="8" fill="#ff5f00"/>
+                    <path d="M24 6c1.6 2.4 2.4 5.2 2.4 6s-.8 3.6-2.4 6c-1.6-2.4-2.4-5.2-2.4-6s.8-3.6 2.4-6z" fill="#ff5f00"/>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <Separator className="bg-gray-800 mb-8" />
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center">
