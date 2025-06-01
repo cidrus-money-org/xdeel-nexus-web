@@ -20,10 +20,10 @@ const NetworkTypes = () => {
     },
     {
       name: "Proof of Stake (PoS)",
-      description: "Validators are selected to create new blocks based on the amount of cryptocurrency they've staked as collateral.",
+      description: "Validators are selected to create new blocks based on the amount of cryptocurrency they have staked as collateral.",
       examples: "Ethereum (post-Merge), Cardano, Solana, Polkadot",
       pros: ["Energy efficient", "Reduced hardware requirements", "Potentially higher transaction throughput"],
-      cons: ["Rich get richer" concerns", "Less battle-tested than PoW", "Initial investment required to participate"],
+      cons: ["Rich get richer concerns", "Less battle-tested than PoW", "Initial investment required to participate"],
       icon: Zap,
       color: "bg-green-100 text-green-600 border-green-300"
     },
