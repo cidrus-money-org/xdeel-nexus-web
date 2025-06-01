@@ -60,11 +60,6 @@ export const RecentlyUpdated = () => {
               Stay up to date with the latest changes
             </p>
           </div>
-          <Link to="/updates">
-            <Button variant="outline">
-              View All Updates
-            </Button>
-          </Link>
         </div>
 
         <div className="space-y-4">

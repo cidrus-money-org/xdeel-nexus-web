@@ -35,6 +35,9 @@ import AccountSetup from "./pages/knowledge-base/getting-started/AccountSetup";
 import FirstSteps from "./pages/knowledge-base/getting-started/FirstSteps";
 import VerificationGuide from "./pages/knowledge-base/getting-started/VerificationGuide";
 import PlatformTour from "./pages/knowledge-base/getting-started/PlatformTour";
+import TradingCategory from "./pages/knowledge-base/TradingCategory";
+import PaymentsCategory from "./pages/knowledge-base/PaymentsCategory";
+import OrderTypes from "./pages/knowledge-base/trading/OrderTypes";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +52,9 @@ const App = () => (
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/knowledge-base/trading" element={<TradingCategory />} />
+          <Route path="/knowledge-base/payments" element={<PaymentsCategory />} />
+          <Route path="/knowledge-base/trading/order-types" element={<OrderTypes />} />
           <Route path="/updates" element={<Updates />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/login" element={<Login />} />
