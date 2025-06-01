@@ -5,23 +5,45 @@ import { FileText, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const RecentlyUpdated = () => {
+  // Helper function to get relative time
+  const getRelativeTime = (daysAgo: number) => {
+    if (daysAgo === 0) return "Today";
+    if (daysAgo === 1) return "Yesterday";
+    if (daysAgo < 7) return `${daysAgo} days ago`;
+    if (daysAgo < 14) return "1 week ago";
+    if (daysAgo < 30) return `${Math.floor(daysAgo / 7)} weeks ago`;
+    return `${Math.floor(daysAgo / 30)} months ago`;
+  };
+
   const recentlyUpdated = [
     {
       title: "Network Types Guide",
       description: "New comprehensive guide covering different blockchain networks",
-      lastUpdated: "Today",
+      lastUpdated: getRelativeTime(0),
       href: "/knowledge-base/network-types"
+    },
+    {
+      title: "Account Setup Guide",
+      description: "Updated account creation and verification process",
+      lastUpdated: getRelativeTime(1),
+      href: "/knowledge-base/account-setup"
+    },
+    {
+      title: "Security Best Practices",
+      description: "Enhanced security recommendations and 2FA setup",
+      lastUpdated: getRelativeTime(3),
+      href: "/resources/security-guide"
     },
     {
       title: "Fee Schedule",
       description: "Updated trading and withdrawal fees",
-      lastUpdated: "2 days ago",
+      lastUpdated: getRelativeTime(5),
       href: "/resources/fee-schedule"
     },
     {
       title: "Supported Countries",
       description: "Current list of supported regions",
-      lastUpdated: "1 week ago",
+      lastUpdated: getRelativeTime(7),
       href: "/resources/supported-countries"
     }
   ];

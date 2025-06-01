@@ -31,6 +31,10 @@ import HowBlockchainWorks from "./pages/knowledge-base/HowBlockchainWorks";
 import CryptoHistory from "./pages/knowledge-base/CryptoHistory";
 import GasFees from "./pages/knowledge-base/GasFees";
 import NetworkTypes from "./pages/knowledge-base/NetworkTypes";
+import AccountSetup from "./pages/knowledge-base/getting-started/AccountSetup";
+import FirstSteps from "./pages/knowledge-base/getting-started/FirstSteps";
+import VerificationGuide from "./pages/knowledge-base/getting-started/VerificationGuide";
+import PlatformTour from "./pages/knowledge-base/getting-started/PlatformTour";
 
 const queryClient = new QueryClient();
 
@@ -67,6 +71,10 @@ const App = () => (
           <Route path="/knowledge-base/crypto-history" element={<CryptoHistory />} />
           <Route path="/knowledge-base/gas-fees" element={<GasFees />} />
           <Route path="/knowledge-base/network-types" element={<NetworkTypes />} />
+          <Route path="/knowledge-base/account-setup" element={<AccountSetup />} />
+          <Route path="/knowledge-base/first-steps" element={<FirstSteps />} />
+          <Route path="/knowledge-base/verification-guide" element={<VerificationGuide />} />
+          <Route path="/knowledge-base/platform-tour" element={<PlatformTour />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
