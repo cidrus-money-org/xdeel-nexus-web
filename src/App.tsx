@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -54,6 +53,10 @@ import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
 import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategory";
 import WithdrawFunds from "./pages/knowledge-base/payments/WithdrawFunds";
 import StopLossTakeProfit from "./pages/knowledge-base/trading/StopLossTakeProfit";
+import AmlCompliance from "./pages/knowledge-base/compliance/AmlCompliance";
+import RestrictedJurisdictions from "./pages/knowledge-base/compliance/RestrictedJurisdictions";
+import PrivacyRights from "./pages/knowledge-base/compliance/PrivacyRights";
+import TermsExplained from "./pages/knowledge-base/compliance/TermsExplained";
 
 const queryClient = new QueryClient();
 
@@ -113,6 +116,10 @@ const App = () => (
           <Route path="/knowledge-base/first-steps" element={<FirstSteps />} />
           <Route path="/knowledge-base/verification-guide" element={<VerificationGuide />} />
           <Route path="/knowledge-base/platform-tour" element={<PlatformTour />} />
+          <Route path="/knowledge-base/compliance/aml-compliance" element={<AmlCompliance />} />
+          <Route path="/knowledge-base/compliance/restricted-jurisdictions" element={<RestrictedJurisdictions />} />
+          <Route path="/knowledge-base/compliance/privacy-rights" element={<PrivacyRights />} />
+          <Route path="/knowledge-base/compliance/terms-explained" element={<TermsExplained />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
