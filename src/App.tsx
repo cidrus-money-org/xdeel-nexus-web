@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -41,7 +42,11 @@ import Crypto101Category from "./pages/knowledge-base/Crypto101Category";
 import ApiDocsCategory from "./pages/knowledge-base/ApiDocsCategory";
 import ComplianceCategory from "./pages/knowledge-base/ComplianceCategory";
 import OrderTypes from "./pages/knowledge-base/trading/OrderTypes";
+import ReadingCharts from "./pages/knowledge-base/trading/ReadingCharts";
 import Enable2FA from "./pages/knowledge-base/security/Enable2FA";
+import PhishingAwareness from "./pages/knowledge-base/security/PhishingAwareness";
+import WalletProtection from "./pages/knowledge-base/security/WalletProtection";
+import Keys from "./pages/knowledge-base/crypto-101/Keys";
 
 const queryClient = new QueryClient();
 
@@ -58,7 +63,17 @@ const App = () => (
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
           <Route path="/knowledge-base/trading" element={<TradingCategory />} />
           <Route path="/knowledge-base/payments" element={<PaymentsCategory />} />
+          <Route path="/knowledge-base/security" element={<SecurityCategory />} />
+          <Route path="/knowledge-base/crypto-101" element={<Crypto101Category />} />
+          <Route path="/knowledge-base/api-docs" element={<ApiDocsCategory />} />
+          <Route path="/knowledge-base/compliance" element={<ComplianceCategory />} />
           <Route path="/knowledge-base/trading/order-types" element={<OrderTypes />} />
+          <Route path="/knowledge-base/trading/reading-charts" element={<ReadingCharts />} />
+          <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
+          <Route path="/knowledge-base/security/phishing-awareness" element={<PhishingAwareness />} />
+          <Route path="/knowledge-base/security/wallet-protection" element={<WalletProtection />} />
+          <Route path="/knowledge-base/crypto-101/keys" element={<Keys />} />
+          <Route path="/knowledge-base/crypto-101/stablecoins" element={<Stablecoins />} />
           <Route path="/updates" element={<Updates />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/login" element={<Login />} />
