@@ -47,6 +47,9 @@ import PhishingAwareness from "./pages/knowledge-base/security/PhishingAwareness
 import WalletProtection from "./pages/knowledge-base/security/WalletProtection";
 import Keys from "./pages/knowledge-base/crypto-101/Keys";
 import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
+import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategory";
+import WithdrawFunds from "./pages/knowledge-base/payments/WithdrawFunds";
+import StopLossTakeProfit from "./pages/knowledge-base/trading/StopLossTakeProfit";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +64,7 @@ const App = () => (
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/knowledge-base/getting-started" element={<GettingStartedCategory />} />
           <Route path="/knowledge-base/trading" element={<TradingCategory />} />
           <Route path="/knowledge-base/payments" element={<PaymentsCategory />} />
           <Route path="/knowledge-base/security" element={<SecurityCategory />} />
@@ -69,6 +73,8 @@ const App = () => (
           <Route path="/knowledge-base/compliance" element={<ComplianceCategory />} />
           <Route path="/knowledge-base/trading/order-types" element={<OrderTypes />} />
           <Route path="/knowledge-base/trading/reading-charts" element={<ReadingCharts />} />
+          <Route path="/knowledge-base/trading/stop-loss-take-profit" element={<StopLossTakeProfit />} />
+          <Route path="/knowledge-base/payments/withdraw-funds" element={<WithdrawFunds />} />
           <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
           <Route path="/knowledge-base/security/phishing-awareness" element={<PhishingAwareness />} />
           <Route path="/knowledge-base/security/wallet-protection" element={<WalletProtection />} />
