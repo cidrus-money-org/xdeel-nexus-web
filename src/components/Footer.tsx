@@ -20,11 +20,6 @@ export const Footer = () => {
       { name: "Privacy and Cookie Policy", href: "/privacy" },
       { name: "Legal and Compliance", href: "/legal" },
       { name: "Compliance and KYC Overview", href: "/kyc-overview" }
-    ],
-    "Account": [
-      { name: "Sign In", href: "/login" },
-      { name: "Sign Up", href: "/signup" },
-      { name: "Security", href: "/security" }
     ]
   };
 
@@ -46,7 +41,7 @@ export const Footer = () => {
               The simplest and most secure way to buy, sell, and trade cryptocurrency. 
               Authorized by Polish Financial Supervision Authority (KNF).
             </p>
-            <div className="space-y-3 mb-6">
+            <div className="space-y-3">
               <div className="flex items-center text-gray-400">
                 <Phone className="w-4 h-4 mr-2 text-[#7B38F3]" />
                 <span>+48 66 224 8895</span>
@@ -55,13 +50,6 @@ export const Footer = () => {
                 <Mail className="w-4 h-4 mr-2 text-[#7B38F3]" />
                 <span>support@xdeel.com</span>
               </div>
-            </div>
-            <div className="flex space-x-4">
-              <Link to="/signup">
-                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg">
-                  Get Started
-                </Button>
-              </Link>
             </div>
           </div>
 
@@ -83,30 +71,62 @@ export const Footer = () => {
               </ul>
             </div>
           ))}
-        </div>
 
-        {/* Payment Methods Section */}
-        <div className="mb-8">
-          <h3 className="text-white font-semibold mb-4">Accepted Payment Methods</h3>
-          <div className="flex items-center space-x-6">
-            {/* SEPA */}
-            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
-              <span className="text-[#003d82] font-bold text-lg">SEPA</span>
-            </div>
-            
-            {/* Visa */}
-            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
-              <span className="text-[#1a1f71] font-bold text-lg">VISA</span>
-            </div>
-            
-            {/* MasterCard */}
-            <div className="bg-white rounded-lg px-4 py-2 flex items-center">
-              <div className="flex items-center space-x-1">
-                <div className="w-6 h-4 bg-[#eb001b] rounded-full"></div>
-                <div className="w-6 h-4 bg-[#ff5f00] rounded-full -ml-3"></div>
-                <span className="text-black font-semibold text-sm ml-2">MasterCard</span>
+          {/* Account & Payment Methods Section */}
+          <div>
+            {/* Accepted Payment Methods */}
+            <div className="mb-8">
+              <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Accepted Payment Methods</h3>
+              <div className="flex justify-end items-center gap-x-4 mb-6">
+                {/* SEPA */}
+                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
+                  <span className="text-[#003d82] font-bold text-sm">SEPA</span>
+                </div>
+                
+                {/* Visa */}
+                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
+                  <span className="text-[#1a1f71] font-bold text-sm">VISA</span>
+                </div>
+                
+                {/* MasterCard */}
+                <div className="bg-white rounded-lg px-3 py-2 flex items-center shadow-sm">
+                  <div className="flex items-center">
+                    <div className="w-5 h-3 bg-[#eb001b] rounded-full"></div>
+                    <div className="w-5 h-3 bg-[#ff5f00] rounded-full -ml-2"></div>
+                    <span className="text-black font-semibold text-xs ml-1">Mastercard</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            {/* Account Links */}
+            <h3 className="text-white font-semibold mb-4">Account</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link 
+                  to="/login"
+                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
+                >
+                  Sign In
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/signup"
+                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
+                >
+                  Sign Up
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/security"
+                  className="text-gray-400 hover:text-[#7B38F3] transition-colors duration-200"
+                >
+                  Security
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
