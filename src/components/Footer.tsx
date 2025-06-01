@@ -71,53 +71,10 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Accepted Payment Methods */}
-        <div className="mb-8">
-          <Separator className="bg-gray-800 mb-8" />
-          <div className="text-center">
-            <h3 className="text-gray-400 font-medium mb-6 text-sm">Accepted Payment Methods</h3>
-            <div className="flex justify-center items-center gap-6 flex-wrap">
-              {/* Visa */}
-              <div className="flex items-center bg-white rounded px-3 py-2" title="Visa">
-                <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                  <rect width="60" height="24" rx="4" fill="#1a1f71"/>
-                  <text x="8" y="16" fill="#ffffff" fontSize="12" fontWeight="bold" fontFamily="Arial, sans-serif">Visa</text>
-                </svg>
-              </div>
-              
-              {/* Mastercard */}
-              <div className="flex items-center bg-white rounded px-3 py-2" title="Mastercard">
-                <svg width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                  <circle cx="18" cy="12" r="8" fill="#eb001b"/>
-                  <circle cx="32" cy="12" r="8" fill="#ff5f00"/>
-                  <path d="M25 6c1.8 2.4 2.8 5.3 2.8 6s-1 3.6-2.8 6c-1.8-2.4-2.8-5.3-2.8-6s1-3.6 2.8-6z" fill="#ff5f00"/>
-                  <text x="42" y="16" fill="#000000" fontSize="10" fontWeight="bold">mastercard</text>
-                </svg>
-              </div>
-              
-              {/* SEPA */}
-              <div className="flex items-center bg-white rounded px-3 py-2" title="SEPA">
-                <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                  <rect width="60" height="24" rx="4" fill="#ffffff" stroke="#e5e7eb" strokeWidth="1"/>
-                  <circle cx="14" cy="12" r="6" fill="#1e40af"/>
-                  <text x="15.5" y="16" fill="#ffffff" fontSize="8" fontWeight="bold">€</text>
-                  <text x="25" y="16" fill="#1e40af" fontSize="10" fontWeight="bold">SEPA</text>
-                </svg>
-              </div>
-              
-              {/* SWIFT */}
-              <div className="flex items-center bg-gray-700 rounded px-3 py-2" title="SWIFT">
-                <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6">
-                  <rect width="50" height="24" rx="4" fill="#374151"/>
-                  <text x="6" y="16" fill="#ffffff" fontSize="10" fontWeight="bold">SWIFT</text>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Separator className="bg-gray-800 mb-8" />
 
         {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2024 Xdeel. All rights reserved. Authorized by Polish Financial Supervision Authority (KNF).
           </div>
