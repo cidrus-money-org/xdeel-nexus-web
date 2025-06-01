@@ -55,12 +55,12 @@ export const Navigation = () => {
                 How It Works
               </Link>
               <Link 
-                to="/faq" 
+                to="/knowledge-base" 
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive('/faq') ? 'text-[#7B38F3] bg-[#F4F0FF]' : 'text-[#7C7C7C] hover:text-[#2E2E2E]'
+                  isActive('/knowledge-base') ? 'text-[#7B38F3] bg-[#F4F0FF]' : 'text-[#7C7C7C] hover:text-[#2E2E2E]'
                 }`}
               >
-                FAQ
+                Knowledge Base
               </Link>
               <Link 
                 to="/contact" 
@@ -126,11 +126,11 @@ export const Navigation = () => {
                 How It Works
               </Link>
               <Link 
-                to="/faq" 
+                to="/knowledge-base" 
                 className="text-xdeel-gray hover:text-xdeel-dark block px-3 py-2 rounded-md text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                FAQ
+                Knowledge Base
               </Link>
               <Link 
                 to="/contact" 

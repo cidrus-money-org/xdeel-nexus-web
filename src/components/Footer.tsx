@@ -10,7 +10,7 @@ export const Footer = () => {
       { name: "Features", href: "/features" }
     ],
     "Support": [
-      { name: "FAQ", href: "/faq" }
+      { name: "Knowledge Base", href: "/knowledge-base" }
     ],
     "Legal": [
       { name: "Terms of Service", href: "/terms" },

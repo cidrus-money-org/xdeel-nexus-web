@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Features from "./pages/Features";
 import HowItWorks from "./pages/HowItWorks";
-import FAQ from "./pages/FAQ";
+import KnowledgeBase from "./pages/KnowledgeBase";
 import Compliance from "./pages/Compliance";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -24,6 +24,12 @@ import ApiDocs from "./pages/resources/ApiDocs";
 import FeeSchedule from "./pages/resources/FeeSchedule";
 import SupportedCountries from "./pages/resources/SupportedCountries";
 import TaxGuide from "./pages/resources/TaxGuide";
+import WhatIsBitcoin from "./pages/knowledge-base/WhatIsBitcoin";
+import WhatIsEthereum from "./pages/knowledge-base/WhatIsEthereum";
+import HowBlockchainWorks from "./pages/knowledge-base/HowBlockchainWorks";
+import CryptoHistory from "./pages/knowledge-base/CryptoHistory";
+import GasFees from "./pages/knowledge-base/GasFees";
+import NetworkTypes from "./pages/knowledge-base/NetworkTypes";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +43,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/features" element={<Features />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -53,6 +59,12 @@ const App = () => (
           <Route path="/resources/fee-schedule" element={<FeeSchedule />} />
           <Route path="/resources/supported-countries" element={<SupportedCountries />} />
           <Route path="/resources/tax-guide" element={<TaxGuide />} />
+          <Route path="/knowledge-base/what-is-bitcoin" element={<WhatIsBitcoin />} />
+          <Route path="/knowledge-base/what-is-ethereum" element={<WhatIsEthereum />} />
+          <Route path="/knowledge-base/how-blockchain-works" element={<HowBlockchainWorks />} />
+          <Route path="/knowledge-base/crypto-history" element={<CryptoHistory />} />
+          <Route path="/knowledge-base/gas-fees" element={<GasFees />} />
+          <Route path="/knowledge-base/network-types" element={<NetworkTypes />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
