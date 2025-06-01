@@ -103,9 +103,11 @@ export const Comparison = () => {
               </div>
               <div className="col-span-3 text-center">
                 <div className="inline-flex items-center space-x-2">
-                  <div className="w-7 h-7 bg-[#7B38F3] rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">X</span>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/a04c51e1-686a-444a-aca8-79f1c89c8647.png" 
+                    alt="Xdeel Logo" 
+                    className="w-7 h-7 object-contain"
+                  />
                   <span className="text-[#7B38F3] font-bold text-lg">Xdeel</span>
                 </div>
               </div>
