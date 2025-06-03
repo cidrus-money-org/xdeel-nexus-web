@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -56,6 +55,7 @@ import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
 import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategory";
 import WithdrawFunds from "./pages/knowledge-base/payments/WithdrawFunds";
 import DepositFunds from "./pages/knowledge-base/payments/DepositFunds";
+import PaymentMethods from "./pages/knowledge-base/payments/PaymentMethods";
 import StopLossTakeProfit from "./pages/knowledge-base/trading/StopLossTakeProfit";
 import AmlCompliance from "./pages/knowledge-base/compliance/AmlCompliance";
 import RestrictedJurisdictions from "./pages/knowledge-base/compliance/RestrictedJurisdictions";
