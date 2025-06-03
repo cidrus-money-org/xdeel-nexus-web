@@ -76,16 +76,16 @@ export const Navigation = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6 space-x-3">
-              <Link to="/login">
+              <a href="https://my.xdeel.com/#signin" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" className="text-[#7C7C7C] hover:text-[#2E2E2E] hover:bg-gray-100 rounded-lg">
                   Sign In
                 </Button>
-              </Link>
-              <Link to="/signup">
+              </a>
+              <a href="https://my.xdeel.com/#signup" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#7B38F3] hover:bg-[#6a2fe0] text-white rounded-xl shadow-md hover:scale-105 transition-all duration-200">
                   Sign Up
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -141,16 +141,16 @@ export const Navigation = () => {
               </Link>
               <div className="pt-4 pb-3 border-t border-gray-200">
                 <div className="flex items-center px-3 space-y-2 flex-col">
-                  <Link to="/login" className="w-full" onClick={() => setIsOpen(false)}>
+                  <a href="https://my.xdeel.com/#signin" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsOpen(false)}>
                     <Button variant="ghost" className="w-full justify-center text-xdeel-gray hover:text-xdeel-dark hover:bg-gray-100">
                       Sign In
                     </Button>
-                  </Link>
-                  <Link to="/signup" className="w-full" onClick={() => setIsOpen(false)}>
+                  </a>
+                  <a href="https://my.xdeel.com/#signup" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-xdeel-primary hover:bg-xdeel-primary-dark text-white">
                       Sign Up
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
