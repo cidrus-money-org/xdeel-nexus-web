@@ -1,6 +1,5 @@
 
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -35,20 +34,9 @@ export const Footer = () => {
                 className="h-8"
               />
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              The simplest and most secure way to buy, sell, and trade cryptocurrency. 
-              Authorized by Polish Financial Supervision Authority (KNF).
+            <p className="text-gray-400 leading-relaxed">
+              Xdeel is a trading style of Cidrus Sp. z o.o., a regulated and authorized Virtual Asset Service Provider (VASP) registered in Poland under Polish Financial Supervision Authority (KNF).
             </p>
-            <div className="space-y-3">
-              <div className="flex items-center text-gray-400">
-                <Phone className="w-4 h-4 mr-2 text-[#7B38F3]" />
-                <span>+48 66 224 8895</span>
-              </div>
-              <div className="flex items-center text-gray-400">
-                <Mail className="w-4 h-4 mr-2 text-[#7B38F3]" />
-                <span>support@xdeel.com</span>
-              </div>
-            </div>
           </div>
 
           {/* Footer Links */}
