@@ -64,6 +64,7 @@ import AmlCompliance from "./pages/knowledge-base/compliance/AmlCompliance";
 import RestrictedJurisdictions from "./pages/knowledge-base/compliance/RestrictedJurisdictions";
 import PrivacyRights from "./pages/knowledge-base/compliance/PrivacyRights";
 import TermsExplained from "./pages/knowledge-base/compliance/TermsExplained";
+import Authentication from "./pages/knowledge-base/api-docs/Authentication";
 
 const queryClient = new QueryClient();
 
@@ -84,6 +85,7 @@ const App = () => (
           <Route path="/knowledge-base/security" element={<SecurityCategory />} />
           <Route path="/knowledge-base/crypto-101" element={<Crypto101Category />} />
           <Route path="/knowledge-base/api-docs" element={<ApiDocsCategory />} />
+          <Route path="/knowledge-base/api-docs/authentication" element={<Authentication />} />
           <Route path="/knowledge-base/compliance" element={<ComplianceCategory />} />
           <Route path="/knowledge-base/trading/order-types" element={<OrderTypes />} />
           <Route path="/knowledge-base/trading/reading-charts" element={<ReadingCharts />} />
