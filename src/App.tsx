@@ -55,6 +55,7 @@ import Keys from "./pages/knowledge-base/crypto-101/Keys";
 import Stablecoins from "./pages/knowledge-base/crypto-101/Stablecoins";
 import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategory";
 import WithdrawFunds from "./pages/knowledge-base/payments/WithdrawFunds";
+import DepositFunds from "./pages/knowledge-base/payments/DepositFunds";
 import StopLossTakeProfit from "./pages/knowledge-base/trading/StopLossTakeProfit";
 import AmlCompliance from "./pages/knowledge-base/compliance/AmlCompliance";
 import RestrictedJurisdictions from "./pages/knowledge-base/compliance/RestrictedJurisdictions";
@@ -86,6 +87,7 @@ const App = () => (
           <Route path="/knowledge-base/trading/fees-limits" element={<FeesLimits />} />
           <Route path="/knowledge-base/trading/stop-loss-take-profit" element={<StopLossTakeProfit />} />
           <Route path="/knowledge-base/trading/common-mistakes" element={<CommonMistakes />} />
+          <Route path="/knowledge-base/payments/deposit-funds" element={<DepositFunds />} />
           <Route path="/knowledge-base/payments/withdraw-funds" element={<WithdrawFunds />} />
           <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
           <Route path="/knowledge-base/security/phishing-awareness" element={<PhishingAwareness />} />
