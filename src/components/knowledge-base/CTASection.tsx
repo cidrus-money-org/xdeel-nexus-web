@@ -15,7 +15,7 @@ export const CTASection = () => {
           <Button size="lg" variant="secondary">
             Contact Support
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-xdeel-primary">
+          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-xdeel-primary hover:border-white">
             Join Community
           </Button>
         </div>
