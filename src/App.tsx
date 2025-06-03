@@ -57,6 +57,7 @@ import GettingStartedCategory from "./pages/knowledge-base/GettingStartedCategor
 import WithdrawFunds from "./pages/knowledge-base/payments/WithdrawFunds";
 import DepositFunds from "./pages/knowledge-base/payments/DepositFunds";
 import PaymentMethods from "./pages/knowledge-base/payments/PaymentMethods";
+import SepaSwift from "./pages/knowledge-base/payments/SepaSwift";
 import StopLossTakeProfit from "./pages/knowledge-base/trading/StopLossTakeProfit";
 import AmlCompliance from "./pages/knowledge-base/compliance/AmlCompliance";
 import RestrictedJurisdictions from "./pages/knowledge-base/compliance/RestrictedJurisdictions";
@@ -91,6 +92,7 @@ const App = () => (
           <Route path="/knowledge-base/payments/deposit-funds" element={<DepositFunds />} />
           <Route path="/knowledge-base/payments/withdraw-funds" element={<WithdrawFunds />} />
           <Route path="/knowledge-base/payments/payment-methods" element={<PaymentMethods />} />
+          <Route path="/knowledge-base/payments/sepa-swift" element={<SepaSwift />} />
           <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
           <Route path="/knowledge-base/security/phishing-awareness" element={<PhishingAwareness />} />
           <Route path="/knowledge-base/security/wallet-protection" element={<WalletProtection />} />
