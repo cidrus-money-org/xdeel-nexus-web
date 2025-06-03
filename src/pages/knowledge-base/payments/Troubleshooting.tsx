@@ -215,7 +215,7 @@ const Troubleshooting = () => {
                 <div className="space-y-2 text-blue-800">
                   <p>📧 Email: support@xdeel.com</p>
                   <p>💬 Live Chat: Available 24/7 in your account</p>
-                  <p>📞 Phone: +1 (555) 123-4567</p>
+                  <p>📞 Phone: +48 66 224 8895</p>
                 </div>
               </CardContent>
             </Card>
