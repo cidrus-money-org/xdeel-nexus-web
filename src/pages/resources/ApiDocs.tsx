@@ -13,9 +13,9 @@ const ApiDocs = () => {
       {/* Header */}
       <section className="py-16 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/faq" className="inline-flex items-center text-xdeel-primary hover:text-xdeel-primary/80 mb-6">
+          <Link to="/knowledge-base/api-docs" className="inline-flex items-center text-xdeel-primary hover:text-xdeel-primary/80 mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to FAQ
+            Back to API & Technical Docs
           </Link>
           
           <div className="flex items-center mb-4">
