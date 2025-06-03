@@ -42,6 +42,7 @@ import ApiDocsCategory from "./pages/knowledge-base/ApiDocsCategory";
 import ComplianceCategory from "./pages/knowledge-base/ComplianceCategory";
 import OrderTypes from "./pages/knowledge-base/trading/OrderTypes";
 import ReadingCharts from "./pages/knowledge-base/trading/ReadingCharts";
+import FeesLimits from "./pages/knowledge-base/trading/FeesLimits";
 import Enable2FA from "./pages/knowledge-base/security/Enable2FA";
 import PhishingAwareness from "./pages/knowledge-base/security/PhishingAwareness";
 import WalletProtection from "./pages/knowledge-base/security/WalletProtection";
@@ -80,6 +81,7 @@ const App = () => (
           <Route path="/knowledge-base/compliance" element={<ComplianceCategory />} />
           <Route path="/knowledge-base/trading/order-types" element={<OrderTypes />} />
           <Route path="/knowledge-base/trading/reading-charts" element={<ReadingCharts />} />
+          <Route path="/knowledge-base/trading/fees-limits" element={<FeesLimits />} />
           <Route path="/knowledge-base/trading/stop-loss-take-profit" element={<StopLossTakeProfit />} />
           <Route path="/knowledge-base/payments/withdraw-funds" element={<WithdrawFunds />} />
           <Route path="/knowledge-base/security/enable-2fa" element={<Enable2FA />} />
